@@ -54,3 +54,13 @@
 
   </layout-wrapper>
 </template>
+
+<script>
+  export default {
+    head() {
+      return {
+        title: '店舗情報'
+      }
+    }
+  }
+</script>

@@ -35,3 +35,13 @@
     </div>
   </layout-wrapper>
 </template>
+
+<script>
+  export default {
+    head() {
+      return {
+        title: 'コンセプト'
+      }
+    }
+  }
+</script>
