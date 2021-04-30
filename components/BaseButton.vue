@@ -26,7 +26,7 @@
         type: String,
         default: 'text-center'
       },
-      classShape: {
+      classSharp: {
         type: String,
         default: 'rounded-lg'
       },
