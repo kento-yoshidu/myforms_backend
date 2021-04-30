@@ -7,10 +7,11 @@
     >
     </layout-visual>
 
+    <base-heading>
+      おすすめメｙヌー
+    </base-heading>
+
       <div class="w-full md:max-w-3xl mx-auto pt-20 px-6 md:px-0">
-        <h2 class="font-sans text-lg text-gray-800 text-center text-3xl mb-10">
-          MdN Cafeのおすすめメニュー
-        </h2>
         <div class="flex flex-wrap justify-between mb-20 md:mb-0">
           <div class="md:w-56 mb-20 shadow-lg bg-gray-200">
             <div class="max-w">

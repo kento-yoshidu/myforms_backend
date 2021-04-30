@@ -1,17 +1,12 @@
 <template>
-  <h2>
-    こんにちは、{{name}}さん
+  <h2 class="font-sans text-lg text-gray-800 text-center text-3xl mb-10">
+    <slot />
   </h2>
 </template>
 
 <script>
 export default {
-  props: {
-    name: {
-      type: String,
-      default: '山田'
-    }
-  }
+  name: 'BaseHeading'
 }
 </script>
 
