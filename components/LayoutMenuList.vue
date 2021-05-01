@@ -1,60 +1,31 @@
 <template>
-  <div :class="wrapClass">
-
-    <div :class="itemClass">
-      <div :class="blockClass">
-        <img
-          src="~/assets/img/menu04.jpg"
-          alt="ケーキ"
-          :class="imageClass"
-        />
-        <div :class="dataClass">
-          <div class="font-bold text-xl mb-2">オリジナルパンケーキ</div>
-          <p v-if="flagBody" class="text-base mb-2">オリジナルパンケーキ。自然素材にこだわりました。</p>
-        </div>
+  <div :class="itemClass">
+    <div :class="blockClass">
+      <img
+        v-if="image"
+        :src="imageUrl"
+        :alt="name"
+        :class="imageClass"
+      />
+      <img
+        v-else
+        src="~/assets/img/dummy.jpg"
+        :alt="name"
+        :class="imageClass"
+      />
+      <div :class="dataClass">
+        <div class="font-bold text-xl mb-2">{{ name }}</div>
+        <p v-if="flagBody" class="text-base mb-2">{{ body }}</p>
+        <p class="text-gray-700 text-base mb-4">{{ price }}円（税込）</p>
       </div>
     </div>
-
-    <div :class="itemClass">
-      <div :class="blockClass">
-        <img
-          src="~/assets/img/menu04.jpg"
-          alt="ケーキ"
-          :class="imageClass"
-        />
-        <div :class="dataClass">
-          <div class="font-bold text-xl mb-2">オリジナルパンケーキ</div>
-          <p v-if="flagBody" class="text-base mb-2">オリジナルパンケーキ。自然素材にこだわりました。</p>
-        </div>
-      </div>
-    </div>
-
-    <div :class="itemClass">
-      <div :class="blockClass">
-        <img
-          src="~/assets/img/menu04.jpg"
-          alt="ケーキ"
-          :class="imageClass"
-        />
-        <div :class="dataClass">
-          <div class="font-bold text-xl mb-2">オリジナルパンケーキ</div>
-          <p v-if="flagBody" class="text-base mb-2">オリジナルパンケーキ。自然素材にこだわりました。</p>
-        </div>
-      </div>
-    </div>
-
   </div>
-  
 </template>
 
 <script>
 export default {
   name: 'LayoutMenuList',
   props: {
-    wrapClass: {
-      type: String,
-      default: ''
-    },
     itemClass: {
       type: String,
       default: "w-full mb-10 shadow-lg"
@@ -74,6 +45,28 @@ export default {
     flagBody: {
       type: Boolean,
       default: true
+    },
+
+    //以下、microCMSから取得する
+    image: {
+      type: Object,
+      required: true
+    },
+    imageUrl: {
+      type: String,
+      required: true
+    },
+    name: {
+      type: String,
+      required: true
+    },
+    body: {
+      type: String,
+      required: true
+    },
+    price: {
+      type:  Number,
+      required: true
     }
   }
 }
