@@ -37,37 +37,15 @@
         <h2 class="font-sans text-lg text-gray-800 text-center text-3xl mb-10">
           MdN Cafeのお知らせ
         </h2>
+
         <div class="mb-20">
-          <div
-            class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 shadow-md mb-5"
-          >
-            <a href="/information/detail" class="block px-4 py-3">
-              <time class="text-gray-700 text-base mb-1 block md:w-1/6">
-                2020.08.15
-              </time>
-              <div class="md:w-10/12">お知らせタイトル</div>
-            </a>
-          </div>
-          <div
-            class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 shadow-md mb-5"
-          >
-            <a href="/information/detail" class="block px-4 py-3">
-              <time class="text-gray-700 text-base mb-1 block md:w-1/6">
-                2020.08.15
-              </time>
-              <div class="md:w-10/12">お知らせタイトル</div>
-            </a>
-          </div>
-          <div
-            class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 shadow-md mb-5"
-          >
-            <a href="/information/detail" class="block px-4 py-3">
-              <time class="text-gray-700 text-base mb-1 block md:w-1/6">
-                2020.08.15
-              </time>
-              <div class="md:w-10/12">お知らせタイトル</div>
-            </a>
-          </div>
+          <layout-information-list
+            v-for="(item, index) in infoItems"
+            :id="item.id"
+            :key="index"
+            :date="item.date"
+            :title="item.title"
+          />
         </div>
 
         <base-button
@@ -80,6 +58,7 @@
 
 <script>
 import axios from 'axios'
+
 export default {
   async asyncData({ $config }) {
     const menu = await axios.get(
@@ -88,8 +67,15 @@ export default {
         headers: { 'X-API-KEY': $config.apiKey },
       }
     )
+    const info = await axios.get(
+      `${$config.apiUrl}/information?limit=3`,
+      {
+        headers: { 'X-API-KEY': $config.apiKey },
+      }
+    )
     return {
       menuItems: menu.data.contents,
+      infoItems: info.data.contents
     }
   },
 }
