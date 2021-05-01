@@ -93,9 +93,6 @@
   </layout-wrapper>
 </template>
 
-<script lang="ts">
-</script>
-
 <style>
 .visual-home {
   background-image: url('~@/assets/img/visual-home.jpg');
