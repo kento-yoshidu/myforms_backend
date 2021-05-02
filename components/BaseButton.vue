@@ -3,7 +3,8 @@
     <a
       :href="link"
       class="text-purple-900 font-semibold md:text-lg xl:text-base px-10 md:px-10 xl:px-4 py-3 md:py-4 xl:py-3 leading-tight bg-white text-gray-800 border-2 border-purple-900
-            hover:bg-purple-900 hover:text-white"
+            hover:text-white"
+      style="border: 2px solid orange;"
     >
       {{ name }}
     </a>

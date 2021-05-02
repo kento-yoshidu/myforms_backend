@@ -3,7 +3,7 @@
     <layout-main-visual
       title="お知らせ"
       visual="visual-information"
-      />
+    />
 
     <!-- main -->
     <main class="w-full md:max-w-4xl mx-auto pt-20 px-6 md:px-0">
