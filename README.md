@@ -1,4 +1,4 @@
-# NuxtSample
+# NuxtDentalClinicSIte
 
 ## Build Setup
 
