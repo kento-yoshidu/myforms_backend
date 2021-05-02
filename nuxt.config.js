@@ -1,14 +1,10 @@
-const { API_KEY, API_URL } = process.env
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate(title) {
-      return (title ? `${title} | ` : '') + process.env.npm_package_name
-    },
+    title: 'NuxtDentalClinicSIte',
     htmlAttrs: {
       lang: 'en',
     },
@@ -24,17 +20,15 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/filter.js'
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    // https://go.nuxtjs.dev/typescript
+    '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
@@ -50,14 +44,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-
-  generate: {
-    fallback: true,
-  },
-  publicRuntimeConfig: {
-    apiUrl: API_URL
-  },
-  privateRuntimeConfig: {
-    apiKey: API_KEY
-  },
 }

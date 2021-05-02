@@ -1,5 +1,4 @@
 <template>
-<!--
   <svg
     class="NuxtLogo"
     width="245"
@@ -20,8 +19,6 @@
       fill="#2F495E"
     />
   </svg>
-  -->
-  <p>test</p>
 </template>
 
 <style>
