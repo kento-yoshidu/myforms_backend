@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <all-wrapper>
     <header class="w-full absolute md:static bg-blue-300 px-2 py-2 z-50">
       <div class="md:max-w-3xl mx-auto md:flex md:items-center">
         <div
@@ -192,7 +192,7 @@
         Copyright © 2021 Nuxt Dental Clinic
       </p>
     </footer>
-  </div>
+  </all-wrapper>
 </template>
 
 <script></script>
