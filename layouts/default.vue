@@ -3,6 +3,7 @@
 
     <layout-header />
     <Nuxt />
+    <layout-footer />
 
   </div>
 </template>
