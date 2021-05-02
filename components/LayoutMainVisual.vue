@@ -59,4 +59,13 @@ export default {
 .visual-home {
   background-image: url('~@/assets/img/visual-home.jpg');
 }
+.visual-concept {
+  background-image: url('~@/assets/img/visual-concept.jpg');
+}
+.visual-information {
+  background-image: url('~@/assets/img/visual-information.jpg');
+}
+.visual-error {
+  background-image: url('~@/assets/img/visual-error.jpg');
+}
 </style>
