@@ -63,6 +63,7 @@
       </div>
     </header>
 
+    <!-- top -->
     <div
       class="relative pt-16 pb-32 flex content-center items-center justify-center z-10"
       style="min-height: 75vh"
@@ -88,11 +89,107 @@
         </div>
       </div>
     </div>
+
+    <!-- main -->
+    <main class="w-full md:max-w-3xl mx-auto pt-20 px-6 md:px-0">
+
+      <section class="border-2 py-8">
+        <!-- お知らせ-->
+        <h2 class="font-sans text-lg text-gray-800 text-center text-3xl mb-10">
+          クリニックからのお知らせ
+        </h2>
+        <div class="mb-20">
+          <div
+            class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 shadow-md mb-5"
+          >
+            <a href="/information/detail" class="block px-4 py-3">
+              <time class="text-gray-700 text-base mb-1 block md:w-1/6">
+                2020.08.15
+              </time>
+              <div class="md:w-10/12">お知らせタイトル</div>
+            </a>
+          </div>
+          <div
+            class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 shadow-md mb-5"
+          >
+            <a href="/information/detail" class="block px-4 py-3">
+              <time class="text-gray-700 text-base mb-1 block md:w-1/6">
+                2020.08.15
+              </time>
+              <div class="md:w-10/12">お知らせタイトル</div>
+            </a>
+          </div>
+          <div
+            class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 shadow-md mb-5"
+          >
+            <a href="/information/detail" class="block px-4 py-3">
+              <time class="text-gray-700 text-base mb-1 block md:w-1/6">
+                2020.08.15
+              </time>
+              <div class="md:w-10/12">お知らせタイトル</div>
+            </a>
+          </div>
+        </div>
+        <div class="mb-10 mx-auto text-center">
+          <a
+            href="/information/"
+            class="font-semibold md:text-lg xl:text-base px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 leading-tight shadow-md rounded-lg bg-white hover:bg-gray-200 text-gray-800"
+          >
+            お知らせの一覧
+          </a>
+        </div>
+      </section>
+
+      <section class="border-2 py-8">
+        <!-- 診療内容 -->
+        <h2 class="font-sans text-lg text-gray-800 text-center text-3xl mb-10">
+          診療内容
+        </h2>
+        <div class="flex flex-wrap justify-between mb-20 md:mb-0">
+          <div class="md:w-56 mb-20 shadow-lg bg-gray-200">
+            <div class="max-w">
+              <img src="~/assets/img/visual-home.jpg" alt="商品名" class="w-full" />
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">アメリカンコーヒー</div>
+                <p class="text-gray-700 text-base mb-4">480円（税込）</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-56 mb-20 shadow-lg bg-gray-200">
+            <div class="max-w">
+              <img src="~/assets/img/visual-home.jpg" alt="商品名" class="w-full" />
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">アメリカンコーヒー</div>
+                <p class="text-gray-700 text-base mb-4">480円（税込）</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-56 mb-20 shadow-lg bg-gray-200">
+            <div class="max-w">
+              <img src="~/assets/img/visual-home.jpg" alt="商品名" class="w-full" />
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">アメリカンコーヒー</div>
+                <p class="text-gray-700 text-base mb-4">480円（税込）</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-10 mx-auto text-center">
+          <a
+            href="/menu/"
+            class="font-semibold md:text-lg xl:text-base px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 leading-tight shadow-md rounded-lg bg-white hover:bg-gray-200 text-gray-800"
+          >
+            診察内容一覧
+          </a>
+        </div>
+      </section>
+    </main>
+
     <footer class="bg-blue-300 pb-10 pt-10">
       <p
-        class="text-center text-white text-sm font-bold leading-relaxed whitespace-no-wrap uppercase"
+        class="text-center text-white text-2xl font-semibold leading-relaxed whitespace-no-wrap"
       >
-        Copyright © 2020 NUXT SMAPLE SITE DEMO
+        Copyright © 2021 Nuxt Dental Clinic
       </p>
     </footer>
   </div>
