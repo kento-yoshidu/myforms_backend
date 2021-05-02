@@ -9,11 +9,12 @@
     <!-- main -->
     <main class="w-full md:max-w-3xl mx-auto pt-20 px-6 md:px-0">
 
-      <section class="border-2 py-8">
+      <base-heading>
+        クリニックからのお知らせ
+      </base-heading>
+
+      <section class="py-8">
         <!-- お知らせ-->
-        <h2 class="font-sans text-lg text-gray-800 text-center text-3xl mb-10">
-          クリニックからのお知らせ
-        </h2>
         <div class="mb-20">
           <div
             class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 shadow-md mb-5"

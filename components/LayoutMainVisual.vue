@@ -14,12 +14,13 @@
       <div class="items-center flex flex-wrap">
         <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div>
-            <h1 class="text-white font-semibold text-5xl text-shadow">
+            <!--<h1 class="text-gray-400 font-semibold text-5xl text-shadow">-->
+            <h1 class="filter drop-shadow-lg text-gray-400 font-semibold text-5xl text-shadow">
               {{ title }}
             </h1>
             <p
               v-if="message" 
-              class="mt-4 text-lg text-white text-shadow-md"
+              class="mt-4 text-2xl text-gray-400 text-shadow-md"
             >
               {{ message }}
             </p>
