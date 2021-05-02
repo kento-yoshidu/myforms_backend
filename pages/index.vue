@@ -1,40 +1,20 @@
 <template>
   <all-wrapper>
-    <!-- top -->
-    <div
-      class="relative pt-16 pb-32 flex content-center items-center justify-center z-10"
-      style="min-height: 75vh"
-    >
-      <div class="absolute top-0 w-full h-full bg-center bg-cover visual-home">
-        <span
-          id="blackOverlay"
-          class="w-full h-full absolute opacity-75"
-        ></span>
-      </div>
-      <div class="container relative mx-auto">
-        <div class="items-center flex flex-wrap">
-          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-            <div>
-              <h1 class="text-white font-semibold text-5xl text-shadow">
-                Nuxt Dental Clinic
-              </h1>
-              <p class="mt-4 text-lg text-white text-shadow-md">
-                お知らせやメニューをmicroCMSを導入したDEMOサイトになります。
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <layout-main-visual
+      title="Nuxt Dental Clinic"
+      message="hoeghoge"
+    />
 
     <!-- main -->
     <main class="w-full md:max-w-3xl mx-auto pt-20 px-6 md:px-0">
 
-      <section class="border-2 py-8">
+      <base-heading>
+        クリニックからのお知らせ
+      </base-heading>
+
+      <section class="py-8">
         <!-- お知らせ-->
-        <h2 class="font-sans text-lg text-gray-800 text-center text-3xl mb-10">
-          クリニックからのお知らせ
-        </h2>
         <div class="mb-20">
           <div
             class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 shadow-md mb-5"
