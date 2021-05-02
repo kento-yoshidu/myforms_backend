@@ -7,13 +7,21 @@
     />
 
     <!-- main -->
-    <main class="w-full md:max-w-3xl mx-auto pt-20 px-6 md:px-0">
+    <main class="w-full md:max-w-4xl mx-auto pt-20 px-6 md:px-0">
 
-      <base-heading>
-        クリニックからのお知らせ
-      </base-heading>
+      <section class="mb-10 text-center">
+        <p class="text-2xl text-center tracking-widest mb-5" style="color: orange">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
+        <p class="text-2xl text-center tracking-widest mb-20" style="color: orange">哲学がハングアップする星座がホームページ上で食事する。</p>
+
+        <p class="w-10/12 mx-auto text-lg mb-3 tracking-wide">嬉しいことに、布団が踊る硫黄が遠ざかる気がした子猫を搭載したヴァイオリンが酒に発明される。</p>
+        <p class="w-10/12 mx-auto text-lg mb-3 tracking-wide">つまるところ、蛙が勢い良く蒸気を吹き出す絆創膏のサポートを打ち切るまでもない。</p>
+        <p class="w-10/12 mx-auto text-lg mb-3 tracking-wide">シャーロック・ホームズがドラゴンクエストテクノロジーとも呼ばれるはさみに恋文を送るなんてことはないが、マッシュルームが地獄から来た登山を持ち上げる。</p>
+      </section>
 
       <section class="py-8">
+        <base-heading>
+          クリニックからのお知らせ
+        </base-heading>
         <!-- お知らせ-->
         <div class="mb-20">
           <div
@@ -47,21 +55,19 @@
             </a>
           </div>
         </div>
-        <div class="mb-10 mx-auto text-center">
-          <a
-            href="/information/"
-            class="font-semibold md:text-lg xl:text-base px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 leading-tight shadow-md rounded-lg bg-white hover:bg-gray-200 text-gray-800"
-          >
-            お知らせの一覧
-          </a>
-        </div>
+
+        <base-button
+          name="お知らせを見る"
+          link="information"
+        />
       </section>
 
       <section class="border-2 py-8">
         <!-- 診療内容 -->
-        <h2 class="font-sans text-lg text-gray-800 text-center text-3xl mb-10">
-          診療内容
-        </h2>
+        <base-heading>
+          診察内容
+        </base-heading>
+
         <div class="flex flex-wrap justify-between mb-20 md:mb-0">
           <div class="md:w-56 mb-20 shadow-lg bg-gray-200">
             <div class="max-w">
@@ -91,14 +97,11 @@
             </div>
           </div>
         </div>
-        <div class="mb-10 mx-auto text-center">
-          <a
-            href="/menu/"
-            class="font-semibold md:text-lg xl:text-base px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 leading-tight shadow-md rounded-lg bg-white hover:bg-gray-200 text-gray-800"
-          >
-            診察内容一覧
-          </a>
-        </div>
+
+        <base-button
+          name="詳しく見る"
+          link="information"
+        />
       </section>
     </main>
 
