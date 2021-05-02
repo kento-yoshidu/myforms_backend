@@ -39,21 +39,7 @@
             <a
               href="/concept/"
               class="text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-              >コンセプト</a
-            >
-          </li>
-          <li class="w-full md:w-auto md:ml-5">
-            <a
-              href="/shop/"
-              class="text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-              >店舗情報</a
-            >
-          </li>
-          <li class="w-full md:w-auto md:ml-5">
-            <a
-              href="/menu/"
-              class="text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-              >メニュー</a
+              >当院について</a
             >
           </li>
           <li class="w-full md:w-auto md:ml-5">
