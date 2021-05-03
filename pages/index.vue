@@ -2,7 +2,7 @@
   <all-wrapper>
 
     <layout-main-visual
-      title="Nuxt Dental Clinic"
+      title="Nuxt Dental Clinic - ナクスト デンタル クリニック"
       message="hoeghoge"
     />
 
@@ -26,9 +26,15 @@
         <base-heading>
           クリニックからのお知らせ
         </base-heading>
-        <!-- お知らせ-->
+
         <div class="mb-20">
-          <layout-information-list />
+          <layout-information-list
+            v-for="(item, index) in infoItems"
+            :id="item.id"
+            :key="index"
+            :date="item.date"
+            :title="item.title"
+          />
         </div>
 
         <base-button
@@ -42,36 +48,6 @@
         <base-heading>
           診察内容
         </base-heading>
-
-        <div class="flex flex-wrap justify-between mb-20 md:mb-0">
-          <div class="md:w-56 mb-20 shadow-lg bg-gray-200">
-            <div class="max-w">
-              <img src="~/assets/img/visual-home.jpg" alt="商品名" class="w-full" />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">アメリカンコーヒー</div>
-                <p class="text-gray-700 text-base mb-4">480円（税込）</p>
-              </div>
-            </div>
-          </div>
-          <div class="md:w-56 mb-20 shadow-lg bg-gray-200">
-            <div class="max-w">
-              <img src="~/assets/img/visual-home.jpg" alt="商品名" class="w-full" />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">アメリカンコーヒー</div>
-                <p class="text-gray-700 text-base mb-4">480円（税込）</p>
-              </div>
-            </div>
-          </div>
-          <div class="md:w-56 mb-20 shadow-lg bg-gray-200">
-            <div class="max-w">
-              <img src="~/assets/img/visual-home.jpg" alt="商品名" class="w-full" />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">アメリカンコーヒー</div>
-                <p class="text-gray-700 text-base mb-4">480円（税込）</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <base-button
           name="詳しく見る"
@@ -90,7 +66,20 @@
   </all-wrapper>
 </template>
 
-<script></script>
+<script>
+import axios from 'axios'
+
+export default {
+  async asyncData({ $config }) {
+    const info = await axios.get(`${$config.apiUrl}/information?limit=3`, {
+      headers: { 'X-API-KEY': $config.apiKey }
+    })
+    return {
+      infoItems: info.data.contents,
+    }
+  },
+}
+</script>
 
 <style>
 .visual-home {
