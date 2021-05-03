@@ -16,7 +16,30 @@
         <p class="w-10/12 mx-auto text-lg mb-3 tracking-wide">つまるところ、蛙が勢い良く蒸気を吹き出す絆創膏のサポートを打ち切るまでもない。</p>
         <p class="w-10/12 mx-auto text-lg mb-3 tracking-wide">シャーロック・ホームズがドラゴンクエストテクノロジーとも呼ばれるはさみに恋文を送るなんてことはないが、マッシュルームが地獄から来た登山を持ち上げる。</p>
       </section>
+
+      <layout-information-list
+        v-for="(item, index) in items"
+        :id="item.id"
+        :key="index"
+        :date="item.date"
+        :title="item.title"
+      />
     </main>
   </all-wrapper>
-
 </template>
+
+<script>
+import axios from 'axios'
+
+export default {
+  async asyncData({ $config }) {
+    console.log("======================", typeof $config)
+    const { data } = await axios.get(`${$config.apiUrl}/information`, {
+      headers: { 'X-API-KEY': $config.apiKey }
+    })
+    return {
+      items: data.contents,
+    }
+  },
+}
+</script>
