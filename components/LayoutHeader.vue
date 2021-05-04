@@ -1,14 +1,21 @@
 <template>
-  <header class="py-2 text-gray-600">
-    <div class="h-16 flex justify-between px-20 border-t-2 border-b-2">
-      <h1 class="text-2xl">Nuxt Dental Clinic</h1>
+  <header class="pt-1 md:pt-3 pb-2 md:pb-5 text-gray-600">
+    <div class="flex justify-between items-center px-10 md:px-20">
+      <h1 class="text-2xl">
+        <a
+          href="/"
+          class="hover:text-blue-400"
+        >
+          Nuxt Dental Clinic
+        </a>
+      </h1>
 
       <div class="text-right hidden md:block">
         <p>滋賀県草津市追分南99-99-99</p>
         <tel>090-0000-0000</tel>
       </div>
 
-      <div class="text-gray-900 md:hidden">
+      <div class="text-gray-600 md:hidden">
         <button
           class="focus:outline-none"
           @click="isOpen = !isOpen"
@@ -28,131 +35,74 @@
     </div>
 
     <nav
-      class="w-full md:block absolute left-0 md:static md:bg-none z-20 bg-white"
+      class="w-full md:block absolute left-0 md:static z-20 bg-white"
       :class="isOpen ? 'block' : 'hidden'"
     >
-      <ul class="md:flex md:justify-center md:items-end">
-        <li class="w-full md:w-auto md:ml-5">
+      <ul class="md:flex md:justify-center md:items-end text-center pt-10">
+        <li class="w-full md:w-auto md:border-l md:border-r p-1 md:p-4 border-2">
           <a
             href="/concept/"
-            class="text-lg text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-            >当院のポリシー</a
+            class="md:block inline-block py-0 md:py-5 md:px-5 md:px-0 w-full"
+            >
+              <div class="mb-1 text-sm text-gray-800">ホーム</div> 
+              <div class="text-xs text-blue-400 font-bold">HOME</div> 
+            </a
           >
         </li>
 
-        <li class="w-full md:w-auto md:ml-5">
+        <li class="w-full md:w-auto border-r p-4">
+          <a
+            href="/concept/"
+            class="inline-block md:block md:py-5 md:px-5 w-full"
+          >
+            <div class="mb-1 text-sm text-gray-800">当院について</div> 
+            <div class="text-xs text-blue-400 font-bold">ABOUT</div> 
+          </a >
+        </li>
+
+        <li class="w-full md:w-auto border-r p-4">
           <a
             href="/examine/"
-            class="text-lg text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-            >診察内容</a
+            class="md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
           >
+            <div class="mb-1 text-sm text-gray-800">診療内容</div> 
+            <div class="text-xs text-blue-400 font-bold">EXAMINE</div> 
+          </a>
         </li>
 
-        <li class="w-full md:w-auto md:ml-5">
+        <li class="w-full md:w-auto border-r p-4">
           <a
             href="/information/"
             class="text-lg text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-            >お知らせ</a
           >
+            <div class="mb-1 text-sm text-gray-800">お知らせ</div> 
+            <div class="text-xs text-blue-400 font-bold">INFORMATION</div> 
+          </a>
         </li>
 
-        <li class="w-full md:w-auto md:ml-5">
+        <li class="w-full md:w-auto border-r p-4">
           <a
             href="/member/"
             class="text-lg text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-            >メンバー</a
           >
+            <div class="mb-1 text-sm text-gray-800">メンバー</div> 
+            <div class="text-xs text-blue-400 font-bold">MEMBER</div> 
+          </a>
         </li>
 
-        <li class="w-full md:w-auto md:ml-5">
+        <li class="w-full md:w-auto border-r p-4">
           <a
             href="/site/"
             class="text-lg text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-            >サイト構成</a
           >
+            <div class="mb-1 text-sm text-gray-800">サイト</div> 
+            <div class="text-xs text-blue-400 font-bold">SITE</div> 
+          </a>
         </li>
       </ul>
     </nav>
     
   </header>
-  <!--
-  <header class="w-full bg-white px-2 py-1 z-50 fixed">
-    <div class="md:w-full mx-auto md:flex md:items-center">
-      <div
-        class="w-full md:flex mx-auto px-6 md:px-0 flex justify-around items-center h-12"
-      >
-        <h1>
-          <a
-            class="text-gray-500 text-2xl font-semibold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap"
-            href="/"
-          >
-            Nuxt Dental Clinic
-          </a>
-        </h1>
-        <div class="text-gray-900 md:hidden">
-          <button
-            class="focus:outline-none"
-            @click="isOpen = !isOpen"
-          >
-            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-              <path
-                v-show="!isOpen"
-                d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
-              />
-              <path
-                v-show="isOpen"
-                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <nav
-        class="w-full md:block absolute left-0 md:static bg-opacity-10 md:bg-none z-20"
-        :class="isOpen ? 'block' : 'hidden'"
-      >
-        <ul class="md:flex md:justify-start md:items-end">
-          <li class="w-full md:w-auto md:ml-5">
-            <a
-              href="/concept/"
-              class="text-lg text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-              >当院のポリシー</a
-            >
-          </li>
-          <li class="w-full md:w-auto md:ml-5">
-            <a
-              href="/examine/"
-              class="text-lg text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-              >診察内容</a
-            >
-          </li>
-          <li class="w-full md:w-auto md:ml-5">
-            <a
-              href="/information/"
-              class="text-lg text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-              >お知らせ</a
-            >
-          </li>
-          <li class="w-full md:w-auto md:ml-5">
-            <a
-              href="/member/"
-              class="text-lg text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-              >メンバー</a
-            >
-          </li>
-          <li class="w-full md:w-auto md:ml-5">
-            <a
-              href="/site/"
-              class="text-lg text-gray-500 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
-              >サイト構成</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  -->
 </template>
 
 <script>

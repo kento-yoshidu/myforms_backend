@@ -1,11 +1,10 @@
 <template>
   <!-- top -->
   <div
-    class="relative pt-16 pb-32 flex z-10"
+    class="relative md:pt-16 pb-32 flex z-10"
     :style="`min-height: ${height}vh`"
   >
-
-    <div :class="`absolute top-0 right-0 translate-x-2/4 w-full h-5/6 bg-center bg-cover ${visual}`">
+    <div :class="`absolute top-0 right-0 w-full h-5/6 bg-center bg-cover ${visual}`">
       <span
         id="blackOverlay"
         class="w-full h-full absolute opacity-75"
@@ -50,8 +49,8 @@ export default {
       default: 'visual-home'
     },
     height: {
-      type: Number,
-      default: 90
+      type: String,
+      default: "90"
     },
   }
 }
