@@ -1,11 +1,11 @@
 <template>
   <!-- top -->
   <div
-    class="relative pt-16 pb-32 flex content-center items-center justify-center z-10 bg-blue-100"
+    class="relative pt-16 pb-32 flex z-10"
     :style="`min-height: ${height}vh`"
   >
 
-    <div :class="`absolute top-0 right-0 w-6/12 h-5/6 bg-center bg-cover ${visual}`">
+    <div :class="`absolute top-0 right-0 translate-x-2/4 w-full h-5/6 bg-center bg-cover ${visual}`">
       <span
         id="blackOverlay"
         class="w-full h-full absolute opacity-75"
@@ -14,10 +14,10 @@
 
     <div class="container relative mx-auto">
       <div class="items-center flex flex-wrap">
-        <div class="w-full px-4 ml-auto mr-auto text-center">
+        <div class="w-full px-4 ml-auto mr-auto">
           <div>
             <!--<h1 class="text-gray-400 font-semibold text-5xl text-shadow">-->
-            <h1 class="filter drop-shadow-lg text-blue-500 font-sm text-3xl text-shadow">
+            <h1 class="filter drop-shadow-lg text-blue-500 font-sm text-4xl text-shadow">
               {{ title }}
             </h1>
             <p
