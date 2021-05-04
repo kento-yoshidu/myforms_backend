@@ -39,10 +39,10 @@
       :class="isOpen ? 'block' : 'hidden'"
     >
       <ul class="md:flex md:justify-center md:items-end text-center pt-5">
-        <li class="w-full md:w-auto border-t border-b md:border-l md:border-r md:border-t-0 md:border-b-0 p-1 md:p-4">
+        <li class="w-full md:w-auto border-t border-b md:border-l md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
           <a
             href="/"
-            class="md:block inline-block py-0 md:py-5 md:px-5 md:px-0 w-full"
+            class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
             >
               <div class="mb-1 text-sm text-gray-800">ホーム</div> 
               <div class="text-xs text-blue-400 font-bold">HOME</div> 
@@ -50,40 +50,40 @@
           >
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-4">
+        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
           <a
             href="/concept/"
-            class="md:block inline-block py-0 md:py-5 md:px-5 md:px-0 w-full"
+            class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
             <div class="mb-1 text-sm text-gray-800">当院について</div> 
             <div class="text-xs text-blue-400 font-bold">ABOUT</div> 
           </a >
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-4">
+        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
           <a
             href="/examine/"
-            class="md:block inline-block py-0 md:py-5 md:px-5 md:px-0 w-full"
+            class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
             <div class="mb-1 text-sm text-gray-800">診療内容</div> 
             <div class="text-xs text-blue-400 font-bold">EXAMINE</div> 
           </a>
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-4">
+        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
           <a
             href="/information/"
-            class="md:block inline-block py-0 md:py-5 md:px-5 md:px-0 w-full"
+            class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
             <div class="mb-1 text-sm text-gray-800">お知らせ</div> 
             <div class="text-xs text-blue-400 font-bold">INFORMATION</div> 
           </a>
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-4">
+        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
           <a
             href="/member/"
-            class="md:block inline-block py-0 md:py-5 md:px-5 md:px-0 w-full"
+            class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
 
           >
             <div class="mb-1 text-sm text-gray-800">メンバー</div> 
@@ -91,10 +91,10 @@
           </a>
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-4">
+        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
           <a
             href="/site/"
-            class="md:block inline-block py-0 md:py-5 md:px-5 md:px-0 w-full"
+            class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
             <div class="mb-1 text-sm text-gray-800">サイト</div> 
             <div class="text-xs text-blue-400 font-bold">SITE</div> 

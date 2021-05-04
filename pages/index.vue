@@ -3,8 +3,7 @@
 
     <layout-main-visual
       title="Nuxt Dental Clinic"
-      message="hoeghoge"
-      height="100"
+      height="70"
     />
 
     <!-- main -->
