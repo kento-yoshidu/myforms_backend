@@ -2,8 +2,9 @@
   <all-wrapper>
 
     <layout-main-visual
-      title="Nuxt Dental Clinic - ナクスト デンタル クリニック"
+      title="Nuxt Dental Clinic"
       message="hoeghoge"
+      height="100"
     />
 
     <!-- main -->
