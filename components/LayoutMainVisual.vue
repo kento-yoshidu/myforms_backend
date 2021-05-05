@@ -1,7 +1,7 @@
 <template>
   <!-- top -->
   <div
-    class="relative mt-3 md:pt-11 md:pb-32 border-2"
+    class="relative mt-3 md:pt-11 md:pb-32"
     :style="`min-height: ${height}vh`"
   >
     <div :class="`filter hue-rotate absolute top-0 right-0 w-10/12 md:h-5/6 h-5/6 m-auto bg-center bg-cover ${visual}`">

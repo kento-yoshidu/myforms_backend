@@ -1,5 +1,5 @@
 <template>
-  <h2 class="font-sans text-lg text-blue-500 text-center text-3xl mb-10">
+  <h2 class="font-sans text-3xl text-blue-500 text-center mb-5">
     <slot />
   </h2>
 </template>
