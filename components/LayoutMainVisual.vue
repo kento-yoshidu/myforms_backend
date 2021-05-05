@@ -20,7 +20,7 @@
       <p
         class="mt-4 md:ml-4 text-sm md:text-xl md:w-9/12 text-gray-100 tracking-wider"
       >
-        腸は美しく新しい宗教を開くが、秋葉原がヴァイオリンに感心すると聞いたことがある。噂によると、馬は指紋のことを待ちわびるだろう。
+        {{ message }}
       </p>
     </div>
   </div>
