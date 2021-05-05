@@ -50,9 +50,44 @@
           診察内容
         </base-heading>
 
+        <div class="border-2 flex flex-wrap">
+            <a
+              class="relative w-2/6 border z-2 flex flex-col justify-center items-center text-white"
+              href="examine"
+            >
+              <img src="~/assets/img/examine/image01.png" class="h-full" />
+              <div
+                class="absolute h-full w-full flex flex-col justify-center items-center"
+                style="background-image: linear-gradient(to right, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+              >
+                <p class="text-2xl">jgapirjpa</p>
+                <p class="text-2xl">jgapirjpa</p>
+                <p class="text-2xl">jgapirjpa</p>
+                <p class="text-2xl">jgapirjpa</p>
+                <p class="text-2xl">jgapirjpa</p>
+              </div>
+            </a>
+
+          <div class="item w-2/6 border">
+            item
+          </div>
+          <div class="item w-2/6 border">
+            item
+          </div>
+          <div class="item w-2/6 border">
+            item
+          </div>
+          <div class="item w-2/6 border">
+            item
+          </div>
+          <div class="item w-2/6 border">
+            item
+          </div>
+        </div>
+
         <base-button
           name="詳しく見る"
-          link="information"
+          link="examine"
         />
       </section>
 

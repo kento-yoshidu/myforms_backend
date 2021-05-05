@@ -1,12 +1,13 @@
 <template>
   <all-wrapper>
     <layout-main-visual
-      title="お知らせ"
+      title="診療内容"
       visual="visual-information"
+      message="当院で行っている診療をご案内します。"
     />
 
     <!-- main -->
-    <main class="w-full md:max-w-4xl mx-auto pt-20 px-6 md:px-0">
+    <main class="w-full md:max-w-4xl mx-auto pt-10 px-6 md:px-0">
 
       <section class="mb-10 text-center">
         <p class="text-2xl text-center tracking-widest mb-5" style="color: orange">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
