@@ -8,7 +8,7 @@
     />
 
     <!-- main -->
-    <main class="w-full md:max-w-4xl mx-auto pt-10 px-6 md:px-0">
+    <main class="w-full mx-auto pt-10 px-6 md:px-0 border-2">
 
       <page-title>
         Nuxt Dental Clinicへようこそ
@@ -23,6 +23,13 @@
         <p class="w-10/12 mx-auto mb-3 tracking-wide">シャーロック・ホームズがドラゴンクエストテクノロジーとも呼ばれるはさみに恋文を送るなんてことはないが、マッシュルームが地獄から来た登山を持ち上げる。</p>
       </section>
 
+      <section>
+        <div
+          class="w-screen m-auto border-2 h-5/6 bg-cover"
+          style="background-image: url('/_nuxt/assets/img/sec2.jpg'); height: 10vh"
+        >
+        </div>
+      </section>
       <section class="py-8">
         <base-heading>
           クリニックからのお知らせ
@@ -50,39 +57,89 @@
           診察内容
         </base-heading>
 
-        <div class="border-2 flex flex-wrap">
-            <a
-              class="relative w-2/6 border z-2 flex flex-col justify-center items-center text-white"
-              href="examine"
+        <div class="flex flex-wrap my-10 md:my-14">
+          <a
+            class="relative w-3/6 md:w-2/6 border z-2 flex flex-col justify-center items-center text-white"
+            href="examine"
+          >
+            <img src="~/assets/img/examine/image01.png" class="h-full" />
+            <div
+              class="absolute h-full w-full flex flex-col justify-center items-center"
+              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));
+                    hover: background-image: linear-gradient(to right bottom, rgba(0,144,0, 0.3), rgba(30, 144, 255, 0.3));"
             >
-              <img src="~/assets/img/examine/image01.png" class="h-full" />
-              <div
-                class="absolute h-full w-full flex flex-col justify-center items-center"
-                style="background-image: linear-gradient(to right, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
-              >
-                <p class="text-2xl">jgapirjpa</p>
-                <p class="text-2xl">jgapirjpa</p>
-                <p class="text-2xl">jgapirjpa</p>
-                <p class="text-2xl">jgapirjpa</p>
-                <p class="text-2xl">jgapirjpa</p>
-              </div>
-            </a>
+              <p class="text-2xl md:text-4xl">虫歯治療</p>
+              <p class="text-lg">jgapirjpa</p>
+            </div>
+          </a>
 
-          <div class="item w-2/6 border">
-            item
-          </div>
-          <div class="item w-2/6 border">
-            item
-          </div>
-          <div class="item w-2/6 border">
-            item
-          </div>
-          <div class="item w-2/6 border">
-            item
-          </div>
-          <div class="item w-2/6 border">
-            item
-          </div>
+          <a
+            class="relative w-3/6 md:w-2/6 border z-2 flex flex-col justify-center items-center text-white"
+            href="examine"
+          >
+            <img src="~/assets/img/examine/image02.png" class="h-full" />
+            <div
+              class="absolute h-full w-full flex flex-col justify-center items-center"
+              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+            >
+              <p class="text-2xl md:text-4xl">歯周病治療</p>
+              <p class="text-2xl">jgapirjpa</p>
+            </div>
+          </a>
+
+          <a
+            class="relative w-3/6 md:w-2/6 border z-2 flex flex-col justify-center items-center text-white"
+            href="examine"
+          >
+            <img src="~/assets/img/examine/image03.png" class="h-full" />
+            <div
+              class="absolute h-full w-full flex flex-col justify-center items-center"
+              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+            >
+              <p class="text-2xl md:text-4xl">矯正歯科</p>
+              <p class="text-2xl">jgapirjpa</p>
+            </div>
+          </a>
+
+          <a
+            class="relative w-3/6 md:w-2/6 border z-2 flex flex-col justify-center items-center text-white"
+            href="examine"
+          >
+            <img src="~/assets/img/examine/image04.png" class="h-full" />
+            <div
+              class="absolute h-full w-full flex flex-col justify-center items-center"
+              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+            >
+              <p class="text-2xl md:text-4xl">インプラント</p>
+              <p class="text-2xl">jgapirjpa</p>
+            </div>
+          </a>
+          <a
+            class="relative w-3/6 md:w-2/6 border z-2 flex flex-col justify-center items-center text-white"
+            href="examine"
+          >
+            <img src="~/assets/img/examine/image05.png" class="h-full" />
+            <div
+              class="absolute h-full w-full flex flex-col justify-center items-center"
+              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+            >
+              <p class="text-2xl md:text-4xl">ホワイトニング</p>
+              <p class="text-2xl">jgapirjpa</p>
+            </div>
+          </a>
+          <a
+            class="relative w-3/6 md:w-2/6 border z-2 flex flex-col justify-center items-center text-white"
+            href="examine"
+          >
+            <img src="~/assets/img/examine/image06.png" class="h-full" />
+            <div
+              class="absolute h-full w-full flex flex-col justify-center items-center"
+              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+            >
+              <p class="text-2xl md:text-4xl">小児歯科</p>
+              <p class="text-2xl">jgapirjpa</p>
+            </div>
+          </a>
         </div>
 
         <base-button

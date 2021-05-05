@@ -7,10 +7,10 @@
       :href="'/information/' + id + '/'"
       class="block px-4 py-3"
     >
-      <time class="text-sm mb-1 block md:w-1/6">
+      <time class="text-sm md:text-base mb-1 block md:w-1/6">
         {{ date | formatDate }}
       </time>
-      <div class="md:w-10/12">
+      <div class="md:w-10/12 md:text-lg">
         {{ title }}
       </div>
     </a>
