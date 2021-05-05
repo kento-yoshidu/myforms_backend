@@ -3,11 +3,11 @@
 
     <layout-main-visual
       title="Nuxt Dental Clinic"
-      height="70"
+      height="60"
     />
 
     <!-- main -->
-    <main class="w-full md:max-w-4xl mx-auto pt-20 px-6 md:px-0">
+    <main class="w-full md:max-w-4xl mx-auto pt-10 px-6 md:px-0">
 
       <page-title>
         Nuxt Dental Clinicへようこそ
