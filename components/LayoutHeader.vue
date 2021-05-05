@@ -1,5 +1,5 @@
 <template>
-  <header class="pt-4 md:pt-3 pb-3 md:pb-5 text-gray-600">
+  <header class="pt-4 md:pt-3 pb-3 md:pb-3 text-gray-600 border-2">
     <div class="flex justify-between items-center px-10 md:px-20">
       <h1 class="text-2xl">
         <a
