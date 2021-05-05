@@ -16,7 +16,7 @@
 
       <section class="mb-10 text-center">
         <p class="md:text-2xl text-center text-blue-500 tracking-widest mb-3 md:mb-5">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
-        <p class="md:text-2xl text-center text-blue-500 tracking-widest mb-5 md:mb-16">哲学がハングアップする星座がホームページ上で食事する。</p>
+        <p class="md:text-2xl text-center text-blue-500 tracking-widest mb-5 md:mb-12">哲学がハングアップする星座がホームページ上で食事する。</p>
 
         <p class="md:w-11/12 mx-auto mb-3 tracking-wide">嬉しいことに、布団が踊る硫黄が遠ざかる気がした子猫を搭載したヴァイオリンが酒に発明される。</p>
         <p class="w-10/12 mx-auto mb-3 tracking-wide">つまるところ、蛙が勢い良く蒸気を吹き出す絆創膏のサポートを打ち切るまでもない。</p>
@@ -28,7 +28,7 @@
           クリニックからのお知らせ
         </base-heading>
 
-        <div class="mb-20">
+        <div class="mb-14">
           <layout-information-list
             v-for="(item, index) in infoItems"
             :id="item.id"

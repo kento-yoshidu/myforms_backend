@@ -1,8 +1,8 @@
 <template>
   <all-wrapper>
     <layout-main-visual
-      title="temp"
-      height="20"
+      title="お知らせ"
+      height="50"
     />
 
     <main class="w-6/12 m-auto pt-20">
@@ -47,3 +47,9 @@ export default {
   }
 }
 </script>
+
+<style scope>
+ h2 {
+   color: red;
+ }
+</style>
