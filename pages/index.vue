@@ -8,29 +8,22 @@
     />
 
     <!-- main -->
-    <main class="w-full mx-auto pt-10 px-6 md:px-0 border-2">
+    <main class="w-full mx-auto pt-10 px-6 md:px-0">
 
       <page-title>
         Nuxt Dental Clinicへようこそ
       </page-title>
 
-      <section class="mb-10 text-center">
+      <section class="mb-10 text-center md:w-4/6 mx-auto">
         <p class="md:text-2xl text-center text-blue-500 tracking-widest mb-3 md:mb-5">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
         <p class="md:text-2xl text-center text-blue-500 tracking-widest mb-5 md:mb-12">哲学がハングアップする星座がホームページ上で食事する。</p>
 
-        <p class="md:w-11/12 mx-auto mb-3 tracking-wide">嬉しいことに、布団が踊る硫黄が遠ざかる気がした子猫を搭載したヴァイオリンが酒に発明される。</p>
-        <p class="w-10/12 mx-auto mb-3 tracking-wide">つまるところ、蛙が勢い良く蒸気を吹き出す絆創膏のサポートを打ち切るまでもない。</p>
-        <p class="w-10/12 mx-auto mb-3 tracking-wide">シャーロック・ホームズがドラゴンクエストテクノロジーとも呼ばれるはさみに恋文を送るなんてことはないが、マッシュルームが地獄から来た登山を持ち上げる。</p>
+        <p class="md:w-4/6 mx-auto mb-3 tracking-wide">嬉しいことに、布団が踊る硫黄が遠ざかる気がした子猫を搭載したヴァイオリンが酒に発明される。</p>
+        <p class="mx-auto mb-3 tracking-wide">つまるところ、蛙が勢い良く蒸気を吹き出す絆創膏のサポートを打ち切るまでもない。</p>
+        <p class="mx-auto mb-3 tracking-wide">シャーロック・ホームズがドラゴンクエストテクノロジーとも呼ばれるはさみに恋文を送るなんてことはないが、マッシュルームが地獄から来た登山を持ち上げる。</p>
       </section>
 
-      <section>
-        <div
-          class="w-screen m-auto border-2 h-5/6 bg-cover"
-          style="background-image: url('/_nuxt/assets/img/sec2.jpg'); height: 10vh"
-        >
-        </div>
-      </section>
-      <section class="py-8">
+      <section class="py-8 md:w-4/6 mx-auto">
         <base-heading>
           クリニックからのお知らせ
         </base-heading>
@@ -51,7 +44,7 @@
         />
       </section>
 
-      <section class="py-8">
+      <section class="py-4 md:py-8 md:w-4/6 mx-auto">
         <!-- 診療内容 -->
         <base-heading>
           診察内容
@@ -148,7 +141,7 @@
         />
       </section>
 
-      <section class="py-8">
+      <section class="py-4 md:py-8">
         <!-- 診療内容 -->
         <base-heading>
           当院のメンバー
