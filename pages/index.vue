@@ -54,12 +54,11 @@
           <a
             class="relative w-3/6 md:w-2/6 border z-2 flex flex-col justify-center items-center text-white"
             href="examine"
+            style="@media screen and (max-width: 768px) { height: 100px; }"
           >
-            <img src="~/assets/img/examine/image01.png" class="h-full" />
             <div
               class="absolute h-full w-full flex flex-col justify-center items-center"
-              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));
-                    hover: background-image: linear-gradient(to right bottom, rgba(0,144,0, 0.3), rgba(30, 144, 255, 0.3));"
+              style="background-color: rgba(30, 144, 255, .3);"
             >
               <p class="text-2xl md:text-4xl">虫歯治療</p>
               <p class="text-lg">jgapirjpa</p>
@@ -73,7 +72,7 @@
             <img src="~/assets/img/examine/image02.png" class="h-full" />
             <div
               class="absolute h-full w-full flex flex-col justify-center items-center"
-              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+              style="background-color: rgba(30, 144, 255, .3);"
             >
               <p class="text-2xl md:text-4xl">歯周病治療</p>
               <p class="text-2xl">jgapirjpa</p>
@@ -87,7 +86,7 @@
             <img src="~/assets/img/examine/image03.png" class="h-full" />
             <div
               class="absolute h-full w-full flex flex-col justify-center items-center"
-              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+              style="background-color: rgba(30, 144, 255, .3);"
             >
               <p class="text-2xl md:text-4xl">矯正歯科</p>
               <p class="text-2xl">jgapirjpa</p>
@@ -101,7 +100,7 @@
             <img src="~/assets/img/examine/image04.png" class="h-full" />
             <div
               class="absolute h-full w-full flex flex-col justify-center items-center"
-              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+              style="background-color: rgba(30, 144, 255, .3);"
             >
               <p class="text-2xl md:text-4xl">インプラント</p>
               <p class="text-2xl">jgapirjpa</p>
@@ -114,7 +113,7 @@
             <img src="~/assets/img/examine/image05.png" class="h-full" />
             <div
               class="absolute h-full w-full flex flex-col justify-center items-center"
-              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+              style="background-color: rgba(30, 144, 255, .3);"
             >
               <p class="text-2xl md:text-4xl">ホワイトニング</p>
               <p class="text-2xl">jgapirjpa</p>
@@ -127,7 +126,7 @@
             <img src="~/assets/img/examine/image06.png" class="h-full" />
             <div
               class="absolute h-full w-full flex flex-col justify-center items-center"
-              style="background-image: linear-gradient(to right bottom, rgba(30,144,255, 0.3), rgba(0, 144, 0, 0.3));"
+              style="background-color: rgba(30, 144, 255, .3);"
             >
               <p class="text-2xl md:text-4xl">小児歯科</p>
               <p class="text-2xl">jgapirjpa</p>
