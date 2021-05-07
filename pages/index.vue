@@ -12,28 +12,33 @@
         Nuxt Dental Clinicへようこそ
       </page-title>
 
-      <section class="relative mb-10 text-center mx-auto">
+      <section class="relative mb-10 text-center mx-auto w-5/6">
         <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-3 md:mb-5">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
-        <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-5 md:mb-24">哲学がハングアップする星座がホームページ上で食事する。</p>
+        <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-12 md:mb-24">哲学がハングアップする星座がホームページ上で食事する。</p>
 
         <!--
         <img src="~/assets/img/main01.jpg"
               class="md:h-1/6 md:w-full" />-->
 
         <div
-          class="relative bg-center bg-cover"
-          style="height: 70vh; background-image: url('_nuxt/assets/img/main01.jpg');"
+          class="md:mt-28 main-img relative bg-center bg-cover"
+          style="height: 70vh;"
         >
-          <div class="absolute top-0 left-40 md:w-2/6 bg-white h-full p-10">
-            <p class="md:w-4/6 mx-auto mb-3 tracking-wide">嬉しいことに、布団が踊る硫黄が遠ざかる気がした子猫を搭載したヴァイオリンが酒に発明される。</p>
-            <p class="mx-auto mb-3 tracking-wide">つまるところ、蛙が勢い良く蒸気を吹き出す絆創膏のサポートを打ち切るまでもない。</p>
-            <p class="mx-auto mb-3 tracking-wide">シャーロック・ホームズがドラゴンクエストテクノロジーとも呼ばれるはさみに恋文を送るなんてことはないが、マッシュルームが地獄から来た登山を持ち上げる。</p>
+          <div class="absolute top-0 md:left-40 md:w-2/6 bg-white h-full p-2 md:p-10">
+            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">嬉しいことに、布団が踊る硫黄が遠ざかる気がした子猫を搭載したヴァイオリンが酒に発明される。</p>
+            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">つまるところ、蛙が勢い良く蒸気を吹き出す絆創膏のサポートを打ち切るまでもない。</p>
+            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">シャーロック・ホームズがドラゴンクエストテクノロジーとも呼ばれるはさみに恋文を送るなんてことはないが、マッシュルームが地獄から来た登山を持ち上げる。</p>
           </div>
+
+          <div class="absolute -top-2 md:-top-10 left-4 md:left-28" style="background-color: rgba(30, 144, 255, 0.1); width: 20vw; height: 20vw;"></div>
+          <div class="absolute top-28 right-44" style="background-color: rgba(0, 114, 225, 0.4); width: 9vw; height: 9vw;"></div>
+          <div class="absolute top-72 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
+          <div class="absolute bottom-4 md:-bottom-8 right-16 md:right-2" style="background-color: rgba(30, 144, 255, 0.5); width: 10vw; height: 10vw;"></div>
         </div>
 
       </section>
 
-      <section class="py-8 md:w-4/6 mx-auto">
+      <section class="py-8 md:w-4/6 mx-auto md-16 md:mt-32">
         <base-heading>
           クリニックからのお知らせ
         </base-heading>
@@ -178,10 +183,10 @@ export default {
 </script>
 
 <style>
-.visual-home {
-  background-image: url('~@/assets/img/visual-home.jpg');
-}
-.main {
-  background-image: url('~@/assets/img/visual-home.jpg');
+.main-img {
+  background-image: url('~@/assets/img/main01.jpg');
+  @media screen and (max-width: 768px) {
+    background-image: none 
+  }
 }
 </style>
