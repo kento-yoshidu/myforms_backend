@@ -12,13 +12,13 @@
     </div>
 
     <div class="absolute top-20 z-2 w-9/12 md:w-5/12 ml-5 md:ml-36 p-4 md:py-10 md:px-16"
-      style="background-image: linear-gradient(to right, rgba(30,144,255, 0.5), rgba(0, 144, 0, 0.5));"
+      style="background-image: linear-gradient(to right, rgba(30,144,255, 0.4), rgba(0, 114, 165, 0.8));"
     >
       <h1 class="text-gray-200 font-sm text-2xl md:text-6xl text-shadow mb-3 md:mb-10">
         {{ title }}
       </h1>
       <p
-        class="mt-4 md:ml-4 text-sm md:text-xl md:w-9/12 text-gray-100 tracking-wider"
+        class="mt-4 md:ml-4 text-sm md:text-xl md:w-10/12 text-gray-100 tracking-widest"
       >
         {{ message }}
       </p>

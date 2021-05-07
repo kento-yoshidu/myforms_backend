@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mb-2 w-10/12 mx-auto border-b-2 border-blue-400 transition-10
+    class="mb-2 md:w-8/12 mx-auto border-b-2 border-blue-400 transition-10
           hover:text-blue-600 hover:bg-blue-100"
   >
     <a
