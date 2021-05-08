@@ -16,13 +16,8 @@
         <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-3 md:mb-5">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
         <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-12 md:mb-24">哲学がハングアップする星座がホームページ上で食事する。</p>
 
-        <!--
-        <img src="~/assets/img/main01.jpg"
-              class="md:h-1/6 md:w-full" />-->
-
         <div
           class="md:mt-28 main-img relative bg-center bg-cover"
-          style="height: 70vh;"
         >
           <div class="absolute top-0 md:left-40 md:w-2/6 bg-white h-full p-2 md:p-10">
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">嬉しいことに、布団が踊る硫黄が遠ざかる気がした子猫を搭載したヴァイオリンが酒に発明される。</p>
@@ -65,7 +60,7 @@
           診察内容
         </base-heading>
 
-        <div class="flex flex-wrap my-10 md:my-14">
+        <div class="flex flex-wrap my-10 md:my-14 w-11/12 mx-auto">
           <a
             class="relative w-3/6 md:w-2/6 border z-2 flex flex-col justify-center items-center text-white"
             href="examine"
@@ -161,8 +156,30 @@
         <base-heading>
           当院のメンバー
         </base-heading>
+
+        <div
+          class="md:mt-28 md:mb-20 md:mr-12 main-img2 relative bg-left bg-cover"
+        >
+          <div class="absolute top-0 left-0 md:w-3/6 bg-white h-full p-2 md:p-10">
+            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">嬉汚らわしい電信柱が雀の一部であるプロレスラーの本質であるに違いない。虫かごが焼きそばを売りに出す。</p>
+            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">筋肉はその物体のようにも見えることがある。</p>
+            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
+          </div>
+
+          <div
+            class="absolute -top-2 md:-top-14 left-4 md:left-52"
+            style="background-color: rgba(30, 144, 255, 0.1); width: 6vw; height: 6vw;"
+          ></div>
+          <div class="absolute top-28 right-44" style="background-color: rgba(0, 114, 225, 0.6); width: 9vw; height: 9vw;"></div>
+          <div class="absolute top-72 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
+          <div class="absolute bottom-4 md:-bottom-8 left-16 md:right-2" style="background-color: rgba(30, 144, 255, 0.1); width: 22vw; height: 22vw;"></div>
+        </div>
+
+        <base-button
+          name="詳しく見る"
+          link="examine"
+        />
       </section>
-    </main>
 
   </all-wrapper>
 </template>
@@ -185,8 +202,19 @@ export default {
 <style>
 .main-img {
   background-image: url('~@/assets/img/main01.jpg');
+  height: 70vh;
   @media screen and (max-width: 768px) {
-    background-image: none 
+    background-image: none ;
+    height: 55vh;
+  }
+}
+
+.main-img2 {
+  background-image: url('~@/assets/img/main02.jpg');
+  height: 70vh;
+  @media screen and (max-width: 768px) {
+    background-image: none ;
+    height: 55vh;
   }
 }
 </style>
