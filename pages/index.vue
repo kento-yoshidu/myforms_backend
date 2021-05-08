@@ -181,6 +181,30 @@
         />
       </section>
 
+      <section class="py-4 md:py-8">
+        <!-- 診療内容 -->
+        <base-heading>
+          ブログ
+        </base-heading>
+
+        <div class="flex flex-wrap justify-center items-center md:w-5/6 mx-auto border-2">
+          <layout-blog-list
+            v-for="(item, index) in blogItems"
+              :id="item.id"
+              :key="index"
+              :date="item.date"
+              :title="item.title"
+              :image="item.image"
+              :imageUrl="item.image.url"
+          />
+        </div>
+
+        <base-button
+          name="詳しく見る"
+          link="blog"
+        />
+      </section>
+
   </all-wrapper>
 </template>
 
@@ -192,8 +216,14 @@ export default {
     const info = await axios.get(`${$config.apiUrl}/information?limit=3`, {
       headers: { 'X-API-KEY': $config.apiKey }
     })
+    const blog = await axios.get(`${$config.apiUrl}/blog?limit=10`, {
+      headers: { 'X-API-KEY': $config.apiKey }
+    })
+    console.log(info.data)
+    console.log(blog.data)
     return {
       infoItems: info.data.contents,
+      blogItems: blog.data.contents
     }
   },
 }
