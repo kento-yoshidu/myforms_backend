@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style scope>
- h2 {
-   color: red;
- }
+  h2 {
+    color: red;
+  }
 </style>
