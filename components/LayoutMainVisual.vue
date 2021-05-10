@@ -60,6 +60,9 @@ export default {
 .visual-information {
   background-image: url('~@/assets/img/visual-information.jpg');
 }
+.visual-blog {
+  background-image: url('~@/assets/img/visual-blog.jpg');
+}
 .visual-error {
   background-image: url('~@/assets/img/visual-error.jpg');
 }

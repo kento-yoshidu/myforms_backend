@@ -219,8 +219,6 @@ export default {
     const blog = await axios.get(`${$config.apiUrl}/blog?limit=10`, {
       headers: { 'X-API-KEY': $config.apiKey }
     })
-    console.log(info.data)
-    console.log(blog.data)
     return {
       infoItems: info.data.contents,
       blogItems: blog.data.contents

@@ -3,6 +3,7 @@
     <layout-main-visual
       title="Blog"
       height="50"
+      visual="visual-blog"
     />
 
     <main class="w-6/12 m-auto pt-20">
@@ -11,12 +12,16 @@
         {{ item.title }}
       </h1>
 
-      <time class="text-gray-600 text-lg">
-        {{ item.date | formatDate }}
+      <time class="block text-gray-600 text-lg text-right">
+        投稿日付　：　{{ item.date | formatDate }}
+      </time>
+
+      <time class="block text-gray-600 text-lg text-right">
+        更新日付　：　{{ item.update | formatDate }}
       </time>
 
       <div
-        class="md:mt-10 md:mb-20 border"
+        class="md:mt-10 md:mb-20"
         v-html="item.body"
       ></div>
 
@@ -56,11 +61,15 @@ export default {
     color: #444;
   }
   h2 {
-    margin: 20px 0 10px;
+    margin: 30px 0 10px;
+    padding-left: 1rem;
     font-size: 2rem;
+    border-left: 8px solid rgba(96, 165, 250, .9);
   }
   p {
     margin-bottom: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
   }
 </style>
