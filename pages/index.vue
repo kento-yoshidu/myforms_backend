@@ -158,7 +158,7 @@
         </base-heading>
 
         <div
-          class="md:mt-28 md:mb-20 md:mr-12 main-img2 relative bg-left bg-cover"
+          class="md:mt-28 mb-12 md:mb-20 md:mr-12 main-img2 relative bg-left bg-cover"
         >
           <div class="absolute top-0 left-0 md:w-3/6 bg-white h-full p-2 md:p-10">
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">嬉汚らわしい電信柱が雀の一部であるプロレスラーの本質であるに違いない。虫かごが焼きそばを売りに出す。</p>
@@ -187,7 +187,7 @@
           ブログ
         </base-heading>
 
-        <div class="flex flex-wrap justify-center items-center md:w-5/6 mx-auto border-2">
+        <div class="flex flex-wrap justify-around mb-20 items-between md:w-4/6 mx-auto">
           <layout-blog-list
             v-for="(item, index) in blogItems"
               :id="item.id"
