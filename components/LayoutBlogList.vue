@@ -1,21 +1,22 @@
 <template>
-  <div
-    class="mb-2 md:w-2/12 border-2 border-blue-400 transition-10
-          hover:text-blue-600 hover:bg-blue-100"
+  <a
+    :href="'/blog/' + id + '/'"
+    class="flex flex-col px-4 py-8 md:w-3/12 border-2 border-gray-200"
   >
-    <a
-      :href="'/blog/' + id + '/'"
-      class="block px-4 py-3"
-    >
-      <time class="text-sm md:text-base mb-1 block md:w-1/6">
-        {{ date | formatDate }}
-      </time>
-      <div class="md:w-10/12 md:text-lg">
-        {{ title }}
-      </div>
-      <img :src="`${imageUrl}`" />
-    </a>
-  </div> 
+    <img
+      :src="`${imageUrl}`"
+      class="md:w-11/12 mx-auto mb-10"
+    />
+
+    <time class="text-sm md:text-base mb-1 block font-bold">
+      {{ date | formatDate }}
+    </time>
+
+    <div class="font-semibold">
+      {{ title }}
+    </div>
+
+  </a>
 </template>
 
 <script>
