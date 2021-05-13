@@ -57,12 +57,18 @@ export default {
 </script>
 
 <style scope>
+  li {
+    margin-left: 20px;
+    list-style: circle;
+  }
   .page-title {
     font-size: 3.5rem;
+    line-height: 1.5;
   }
 
   h1,h2,h3,p {
     color: #444;
+    line-height: 1.5;
   }
   .text-body h1 {
     font-size: 3rem;
@@ -70,19 +76,21 @@ export default {
     border-bottom: 8px solid rgba(96, 165, 250, .9);
   }
   h2 {
-    margin: 30px 0 10px;
+    margin: 40px 0 8px;
     padding-left: 1rem;
     font-size: 2rem;
     border-left: 8px solid rgba(96, 165, 250, .9);
   }
   h3 {
-    font-size: 1.8rem;
+    margin: 40px 0 6px;
+    font-size: 1.6rem;
   }
   p {
     margin-bottom: 5px;
     font-size: 1.1rem;
     letter-spacing: 1px;
     line-height: 1.6;
+    text-indent: 7rem;
   }
 
   @media screen and (max-width: 768px) {
