@@ -52,16 +52,6 @@
 
         <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
           <a
-            href="/concept/"
-            class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
-          >
-            <div class="mb-1 text-sm text-gray-800">当院について</div> 
-            <div class="text-xs text-blue-400 font-bold">ABOUT</div> 
-          </a >
-        </li>
-
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
-          <a
             href="/examine/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
@@ -93,11 +83,11 @@
 
         <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
           <a
-            href="/site/"
+            href="/blog/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1 text-sm text-gray-800">サイト</div> 
-            <div class="text-xs text-blue-400 font-bold">SITE</div> 
+            <div class="mb-1 text-sm text-gray-800">ブログ</div> 
+            <div class="text-xs text-blue-400 font-bold">BLOG</div> 
           </a>
         </li>
       </ul>

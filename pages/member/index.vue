@@ -6,7 +6,7 @@
     />
 
     <!-- main -->
-    <main class="w-full mx-auto pt-20 px-6 md:px-0">
+    <main class="w-full mx-auto px-6 md:px-0">
 
       <page-title>
         当院のメンバー
@@ -102,5 +102,4 @@
 
     </main>
   </all-wrapper>
-
 </template>

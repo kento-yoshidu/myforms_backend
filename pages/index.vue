@@ -4,7 +4,6 @@
     <layout-main-visual
       title="Nuxt Dental Clinic"
       message="恐るべき結婚式がオウム貝のような戦艦を開発するかも知れない。流れ星がブームを巻き起こした後、鉄格子は線路を改良した酢こんぶの胎内に宿ると思われる。"
-      height="60"
     />
 
     <!-- main -->
