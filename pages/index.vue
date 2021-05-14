@@ -186,7 +186,7 @@
           ブログ
         </base-heading>
 
-        <div class="flex flex-wrap justify-around mb-20 items-between md:w-4/6 mx-auto">
+        <div class="flex flex-wrap justify-around mb-20 items-between md:w-3/6 mx-auto">
           <layout-blog-list
             v-for="(item, index) in blogItems"
               :id="item.id"

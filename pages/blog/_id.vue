@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style scope>
-  li {
+  .text-body li {
     margin-left: 20px;
     list-style: circle;
   }
@@ -90,7 +90,7 @@ export default {
     font-size: 1.1rem;
     letter-spacing: 1px;
     line-height: 1.6;
-    text-indent: 7rem;
+    text-indent: .7rem;
   }
 
   @media screen and (max-width: 768px) {
@@ -113,7 +113,7 @@ export default {
     }
     p {
       margin-bottom: 5px;
-      font-size: 1.1rem;
+      font-size: 1rem;
       letter-spacing: 1px;
       line-height: 1.6;
     }
