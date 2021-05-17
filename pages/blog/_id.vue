@@ -2,11 +2,10 @@
   <all-wrapper>
     <layout-main-visual
       title="Blog"
-      height="50"
       visual="visual-blog"
     />
 
-    <main class="w-10/12 md:w-6/12 mx-auto pt-4 md:pt-20">
+    <main class="w-10/12 md:w-6/12 mx-auto pt-4">
 
       <h1 class="page-title text-4xl text-gray-600 text-center mb-4 md:mb-12">
         {{ item.title }}

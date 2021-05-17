@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 .visual-home {
-  background-image: url('~@/assets/img/visual-home.jpg');
+  background-image: url('~@/assets/img/visual-home.webp');
 }
 .visual-concept {
   background-image: url('~@/assets/img/visual-concept.jpg');
@@ -61,7 +61,7 @@ export default {
   background-image: url('~@/assets/img/visual-information.jpg');
 }
 .visual-blog {
-  background-image: url('~@/assets/img/visual-blog.jpg');
+  background-image: url('~@/assets/img/visual-blog.webp');
 }
 .visual-error {
   background-image: url('~@/assets/img/visual-error.jpg');

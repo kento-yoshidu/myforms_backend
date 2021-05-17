@@ -5,14 +5,14 @@
   >
     <img
       :src="`${imageUrl}`"
-      class="md:w-11/12 mx-auto mb-10"
+      class="w-3/6 md:w-9/12 mx-auto mb-10"
     />
 
     <time class="text-sm md:text-lg mb-1 block fontsemi-bold">
       {{ date | formatDate }}
     </time>
 
-    <div class="text-2xl">
+    <div class="text-lg md:text-2xl">
       {{ title }}
     </div>
 

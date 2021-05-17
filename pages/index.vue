@@ -32,12 +32,12 @@
 
       </section>
 
-      <section class="py-8 md:w-4/6 mx-auto md-16 md:mt-32">
+      <section class="py-8 md:w-4/6 w-11/12 mx-auto md-16 md:mt-32">
         <base-heading>
           クリニックからのお知らせ
         </base-heading>
 
-        <div class="mb-14">
+        <div class="mb-14 w-11/12 mx-auto">
           <layout-information-list
             v-for="(item, index) in infoItems"
             :id="item.id"
@@ -150,16 +150,16 @@
         />
       </section>
 
-      <section class="py-4 md:py-8">
+      <section class="w-11/12 mx-auto py-2 md:py-8">
         <!-- 診療内容 -->
         <base-heading>
           当院のメンバー
         </base-heading>
 
         <div
-          class="md:mt-28 mb-12 md:mb-20 md:mr-12 main-img2 relative bg-left bg-cover"
+          class="md:mt-28 md:mb-12 md:mb-20 md:mr-12 main-img2 relative bg-left bg-cover"
         >
-          <div class="absolute top-0 left-0 md:w-3/6 bg-white h-full p-2 md:p-10">
+          <div class="absolute top-0 left-0 md:w-3/6 md:bg-white h-full p-2 md:p-10">
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">嬉汚らわしい電信柱が雀の一部であるプロレスラーの本質であるに違いない。虫かごが焼きそばを売りに出す。</p>
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">筋肉はその物体のようにも見えることがある。</p>
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
@@ -180,7 +180,7 @@
         />
       </section>
 
-      <section class="py-4 md:py-8">
+      <section class="w-8/12 md:w-full mx-auto py-4 md:py-8">
         <!-- 診療内容 -->
         <base-heading>
           ブログ
@@ -228,7 +228,7 @@ export default {
 
 <style>
 .main-img {
-  background-image: url('~@/assets/img/main01.jpg');
+  background-image: url('~@/assets/img/main01.webp');
   height: 70vh;
   @media screen and (max-width: 768px) {
     background-image: none ;
@@ -237,7 +237,7 @@ export default {
 }
 
 .main-img2 {
-  background-image: url('~@/assets/img/main02.jpg');
+  background-image: url('~@/assets/img/main02.webp');
   height: 70vh;
   @media screen and (max-width: 768px) {
     background-image: none ;
