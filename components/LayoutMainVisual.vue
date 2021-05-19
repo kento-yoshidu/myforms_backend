@@ -4,7 +4,7 @@
     class="relative mt-3 md:pt-11 md:pb-32"
     :style="`min-height: ${height}vh`"
   >
-    <div :class="`filter hue-rotate absolute top-0 right-0 w-10/12 md:h-5/6 h-5/6 m-auto bg-center bg-cover ${visual}`">
+    <div :class="`absolute top-0 right-0 w-10/12 md:h-5/6 h-5/6 m-auto bg-center bg-cover ${visual}`">
       <span
         id="blackOverlay"
         class="w-full h-full absolute opacity-75"
@@ -44,7 +44,7 @@ export default {
     },
     height: {
       type: String,
-      default: "78"
+      default: "68"
     },
   }
 }
