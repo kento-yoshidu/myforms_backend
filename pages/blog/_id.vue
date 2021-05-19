@@ -5,7 +5,7 @@
       visual="visual-blog"
     />
 
-    <main class="w-10/12 md:w-6/12 mx-auto pt-4">
+    <main class="w-11/12 md:w-6/12 mx-auto pt-2">
 
       <h1 class="page-title text-4xl text-gray-600 text-center mb-4 md:mb-12">
         {{ item.title }}
@@ -61,7 +61,7 @@ export default {
     list-style: circle;
   }
   .page-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1.5;
   }
 
@@ -70,7 +70,7 @@ export default {
     line-height: 1.5;
   }
   .text-body h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1.6;
     border-bottom: 8px solid rgba(96, 165, 250, .9);
   }
@@ -81,7 +81,7 @@ export default {
     border-left: 8px solid rgba(96, 165, 250, .9);
   }
   h3 {
-    margin: 40px 0 6px;
+    margin: 30px 0 6px;
     font-size: 1.6rem;
   }
   p {
@@ -102,13 +102,14 @@ export default {
       border-bottom: 7px solid rgba(96, 165, 250, .9);
     }
     h2 {
-      margin: 15px 0 5px;
+      margin: 15px 0 0px;
       padding-left: 1rem;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       border-left: 8px solid rgba(96, 165, 250, .9);
     }
     h3 {
-      font-size: 1.6rem;
+      margin: 10px 0 0;
+      font-size: 1.4rem;
     }
     p {
       margin-bottom: 5px;
