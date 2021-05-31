@@ -2,7 +2,6 @@
   <all-wrapper>
     <layout-main-visual
       title="お知らせ"
-      height="50"
     />
 
     <main class="w-6/12 m-auto pt-20">
