@@ -3,7 +3,7 @@
 
     <layout-main-visual
       title="Nuxt Dental Clinic"
-      message="恐るべき結婚式がオウム貝のような戦艦を開発するかも知れない。流れ星がブームを巻き起こした後、鉄格子は線路を改良した酢こんぶの胎内に宿ると思われる。"
+      message="恐るべき結婚式がオウム貝のような戦艦を開発するかも知れない。"
     />
 
     <!-- main -->
@@ -11,7 +11,7 @@
         Nuxt Dental Clinicへようこそ
       </page-title>
 
-      <section class="relative mb-10 text-center mx-auto w-5/6">
+      <section class="relative mb-24 text-center mx-auto w-5/6">
         <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-3 md:mb-5">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
         <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-12 md:mb-24">哲学がハングアップする星座がホームページ上で食事する。</p>
 
@@ -26,18 +26,18 @@
 
           <div class="absolute -top-2 md:-top-10 left-4 md:left-28" style="background-color: rgba(30, 144, 255, 0.1); width: 20vw; height: 20vw;"></div>
           <div class="absolute top-28 right-44" style="background-color: rgba(0, 114, 225, 0.4); width: 9vw; height: 9vw;"></div>
-          <div class="absolute top-72 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
+          <div class="absolute top-56 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
           <div class="absolute bottom-4 md:-bottom-8 right-16 md:right-2" style="background-color: rgba(30, 144, 255, 0.5); width: 10vw; height: 10vw;"></div>
         </div>
 
       </section>
 
-      <section class="py-8 md:w-4/6 w-11/12 mx-auto md-16 md:mt-32">
+      <section class="py-6 w-full mx-auto md-16 md:mt-32 bg-gray-50">
         <base-heading>
           クリニックからのお知らせ
         </base-heading>
 
-        <div class="mb-14 w-11/12 mx-auto">
+        <div class="mb-14 w-9/12 mx-auto">
           <layout-information-list
             v-for="(item, index) in infoItems"
             :id="item.id"
@@ -163,6 +163,9 @@
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">嬉汚らわしい電信柱が雀の一部であるプロレスラーの本質であるに違いない。虫かごが焼きそばを売りに出す。</p>
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">筋肉はその物体のようにも見えることがある。</p>
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
+            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
+            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
+            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
           </div>
 
           <div
@@ -170,7 +173,7 @@
             style="background-color: rgba(30, 144, 255, 0.1); width: 6vw; height: 6vw;"
           ></div>
           <div class="absolute top-28 right-44" style="background-color: rgba(0, 114, 225, 0.6); width: 9vw; height: 9vw;"></div>
-          <div class="absolute top-72 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
+          <div class="absolute top-48 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
           <div class="absolute bottom-4 md:-bottom-8 left-16 md:right-2" style="background-color: rgba(30, 144, 255, 0.1); width: 22vw; height: 22vw;"></div>
         </div>
 
