@@ -1,15 +1,17 @@
 <template>
   <!-- top -->
   <div
-    class="relative mt-3 md:pt-11 md:pb-32 h-48 md:h-96"
+    class="relative mt-3 md:pt-11 md:pb-32 h-48 md:h-96 mb-10"
   >
-    <div :class="`absolute top-0 right-0 w-10/12 md:h-full h-5/6 m-auto bg-center bg-cover ${visual}`">
+    <!-- 背景画像 -->
+    <div :class="`absolute top-0 right-0 w-10/12 h-full md:h-full m-auto bg-center bg-cover ${visual}`">
       <span
         id="blackOverlay"
         class="w-full h-full absolute opacity-75"
       ></span>
     </div>
 
+    <!-- 青い背景の説明文 -->
     <div class="absolute top-10 z-2 w-9/12 md:w-5/12 ml-5 md:ml-36 p-4 md:py-10 md:px-16"
       style="background-image: linear-gradient(to right, rgba(30,144,255, 0.4), rgba(0, 114, 165, 0.8));"
     >
