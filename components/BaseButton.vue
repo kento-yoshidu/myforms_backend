@@ -2,7 +2,7 @@
   <div class="mb-10 mx-auto text-center">
     <a
       :href="link"
-      class="text-blue-500 font-semibold md:text-lg xl:text-base px-10 md:px-10 xl:px-8 py-3 md:py-4 xl:py-3 leading-tight bg-white text-gray-800
+      class="text-blue-500 font-semibold text-sm md:text-lg xl:text-base px-8 md:px-10 xl:px-8 py-3 md:py-4 xl:py-3 leading-tight bg-white text-gray-800
             border-2 border-blue-500 rounded-sm duration-100
             hover:text-white hover:bg-blue-500"
     >
