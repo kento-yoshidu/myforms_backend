@@ -156,30 +156,26 @@
           当院のメンバー
         </base-heading>
 
-        <div
-          class="md:mt-28 md:mb-12 md:mb-20 md:mr-12 main-img2 relative bg-left bg-cover"
-        >
-          <div class="absolute top-0 left-0 md:w-3/6 md:bg-white h-full p-2 md:p-10">
+        <div class="relative flex flex-row-reverse justify-around md:mb-12">
+          <div
+            class="hidden md:block main-img2 md:w-6/12"
+          >
+          </div>
+
+          <div class="mb-8 w-10/12 md:w-4/12 h-full p-2">
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">嬉汚らわしい電信柱が雀の一部であるプロレスラーの本質であるに違いない。虫かごが焼きそばを売りに出す。</p>
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">筋肉はその物体のようにも見えることがある。</p>
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
-            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
-            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
-            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
           </div>
 
-          <div
-            class="absolute -top-2 md:-top-14 left-4 md:left-52"
-            style="background-color: rgba(30, 144, 255, 0.1); width: 6vw; height: 6vw;"
-          ></div>
           <div class="absolute top-28 right-44" style="background-color: rgba(0, 114, 225, 0.6); width: 9vw; height: 9vw;"></div>
-          <div class="absolute top-48 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
-          <div class="absolute bottom-4 md:-bottom-8 left-16 md:right-2" style="background-color: rgba(30, 144, 255, 0.1); width: 22vw; height: 22vw;"></div>
+          <div class="absolute top-32 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
+          <div class="absolute top-40 left-32 md:-bottom-8 left-16 md:right-2" style="background-color: rgba(30, 144, 255, 0.1); width: 12vw; height: 12vw;"></div>
         </div>
 
         <base-button
           name="詳しく見る"
-          link="examine"
+          link="member"
         />
       </section>
 
@@ -232,7 +228,6 @@ export default {
 <style>
 .main-img {
   background-image: url('~@/assets/img/main01.webp');
-  height: 70vh;
   @media screen and (max-width: 768px) {
     background-image: none ;
     height: 55vh;
@@ -241,10 +236,8 @@ export default {
 
 .main-img2 {
   background-image: url('~@/assets/img/main02.webp');
-  height: 70vh;
-  @media screen and (max-width: 768px) {
-    background-image: none ;
-    height: 55vh;
-  }
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
 }
 </style>
