@@ -33,9 +33,10 @@
       </section>
 
       <section class="py-6 w-full mx-auto md-16 md:mt-32 bg-gray-50">
-        <base-heading>
-          クリニックからのお知らせ
-        </base-heading>
+        <base-heading
+          title="Information"
+          sub="クリニックからのお知らせ"
+        />
 
         <div class="mb-14 w-9/12 mx-auto">
           <layout-information-list
@@ -55,9 +56,10 @@
 
       <section class="py-4 md:py-8 md:w-4/6 mx-auto">
         <!-- 診療内容 -->
-        <base-heading>
-          診察内容
-        </base-heading>
+        <base-heading
+          title="Examine"
+          sub="診察内容"
+        />
 
         <div class="flex flex-wrap my-10 md:my-14 w-11/12 mx-auto">
           <a
@@ -152,9 +154,10 @@
 
       <section class="w-11/12 mx-auto py-2 md:py-8">
         <!-- 診療内容 -->
-        <base-heading>
-          当院のメンバー
-        </base-heading>
+        <base-heading
+          title="Member"
+          sub="当院のメンバー"
+        />
 
         <div class="relative flex flex-row-reverse justify-around md:mb-12">
           <div
@@ -168,7 +171,7 @@
             <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
           </div>
 
-          <div class="absolute top-28 right-44" style="background-color: rgba(0, 114, 225, 0.6); width: 9vw; height: 9vw;"></div>
+          <div class="absolute top-20 right-44" style="background-color: rgba(0, 114, 225, 0.6); width: 9vw; height: 9vw;"></div>
           <div class="absolute top-32 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
           <div class="absolute top-40 left-32 md:-bottom-8 left-16 md:right-2" style="background-color: rgba(30, 144, 255, 0.1); width: 12vw; height: 12vw;"></div>
         </div>
@@ -181,9 +184,10 @@
 
       <section class="w-8/12 md:w-full mx-auto py-4 md:py-8">
         <!-- 診療内容 -->
-        <base-heading>
-          ブログ
-        </base-heading>
+        <base-heading
+          title="Blog"
+          sub="ブログ"
+        />
 
         <div class="flex flex-wrap justify-around mb-20 items-between md:w-3/6 mx-auto">
           <layout-blog-list
@@ -228,6 +232,7 @@ export default {
 <style>
 .main-img {
   background-image: url('~@/assets/img/main01.webp');
+  height: 70vh;
   @media screen and (max-width: 768px) {
     background-image: none ;
     height: 55vh;
