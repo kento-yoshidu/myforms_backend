@@ -1,19 +1,17 @@
 <template>
   <div
-    class="mb-2 md:w-8/12 mx-auto border-b-2 border-blue-400 transition-10
-          hover:text-blue-600 hover:bg-blue-100"
+    class="mb-10 md:w-8/12 mx-auto transition-10"
   >
-    <a
-      :href="'/information/' + id + '/'"
-      class="block px-4 py-3"
-    >
-      <time class="text-sm md:text-base mb-1 block md:w-1/6">
-        {{ date | formatDate }}
-      </time>
-      <div class="md:w-10/12 md:text-lg">
-        {{ title }}
-      </div>
-    </a>
+    <time class="text-sm md:text-base mb-1 block md:w-1/6">
+      {{ date | formatDate }}
+    </time>
+    <div class="md:w-10/12 text-2xl mb-4">
+      {{ title }}
+    </div>
+
+    <div
+      v-html="body"
+    />
   </div>
 </template>
 
@@ -32,6 +30,9 @@ export default {
     id: {
       type: String,
       required: true
+    },
+    body: {
+      type: String,
     }
   }
 } 
