@@ -50,7 +50,7 @@
 
         <base-button
           name="お知らせを見る"
-          link="information"
+          link="information/"
         />
       </section>
 
