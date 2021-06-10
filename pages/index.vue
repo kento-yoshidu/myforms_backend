@@ -39,13 +39,22 @@
         />
 
         <div class="mb-14 w-9/12 mx-auto">
-          <layout-information-list
-            v-for="(item, index) in infoItems"
-            :id="item.id"
-            :key="index"
-            :date="item.date"
-            :title="item.title"
-          />
+          <a
+            class="mb-10 w-11/12 md:w-8/12 mx-auto transition-10"
+            v-for="(item, index) in infoItems" :key="index"
+            :href="`/information/#${item.id}`"
+          >
+            <div class="border-l-8 border-blue-400 pl-4 -ml-4 py-1 mb-4">
+              <time class="text-sm md:text-base block md:w-1/6">
+                {{ item.date | formatDate }}
+              </time>
+              <div class="md:w-10/12 text-lg md:text-2xl">
+                {{ item.title }}
+              </div>
+            </div>
+
+            <hr class="border-b-2 -ml-4">
+          </a>
         </div>
 
         <base-button
@@ -189,16 +198,24 @@
           sub="ブログ"
         />
 
-        <div class="flex flex-wrap justify-around mb-20 items-between md:w-3/6 mx-auto">
-          <layout-blog-list
-            v-for="(item, index) in blogItems"
-              :id="item.id"
-              :key="index"
-              :date="item.date"
-              :title="item.title"
-              :image="item.image"
-              :imageUrl="item.image.url"
-          />
+        <div
+          class="flex flex-wrap justify-center mb-20 items-between md:w-3/6 mx-auto border-2"
+          v-for="(item, index) in blogItems" :key="index"
+        >
+          <a
+            :href="'/blog/' + item.id + '/'"
+            class="flex flex-col px-4 py-8 md:px-8 md:py-12 md:w-5/12 border-2 border-gray-400"
+          >
+            <img
+              :src="`${item.image.url}`"
+              class="w-3/6 md:w-6/12 mx-auto mb-10 md:mb-2"
+            />
+
+            <time class="text-sm md:text-lg mb-1 block fontsemi-bold">
+              {{ item.date | formatDate }}
+            </time>
+            {{ item.title }}
+          </a>
         </div>
 
         <base-button
@@ -215,10 +232,10 @@ import axios from 'axios'
 
 export default {
   async asyncData({ $config }) {
-    const info = await axios.get(`${$config.apiUrl}/information?limit=3`, {
+    const info = await axios.get(`${$config.apiUrl}/information?filters=isRecent[equals]true`, {
       headers: { 'X-API-KEY': $config.apiKey }
     })
-    const blog = await axios.get(`${$config.apiUrl}/blog?limit=10`, {
+    const blog = await axios.get(`${$config.apiUrl}/blog?limit=3`, {
       headers: { 'X-API-KEY': $config.apiKey }
     })
     return {
