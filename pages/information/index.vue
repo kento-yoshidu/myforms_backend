@@ -13,7 +13,7 @@
       </section>
 
       <div
-        class="mb-10 w-11/12 md:w-8/12 mx-auto transition-10 borde-2"
+        class="mb-10 md:mb-20 w-11/12 md:w-8/12 mx-auto transition-10 border-b-2 border-blue-200"
         :id="item.id"
         v-for="(item, index) in items" :key="index"
       >
@@ -21,22 +21,21 @@
           <time class="text-sm md:text-base block md:w-1/6">
             {{ item.date | formatDate }}
           </time>
-          <div class="md:w-10/12 text-lg md:text-2xl">
+          <div class="md:w-10/12 text-lg md:text-3xl">
             {{ item.title }}
           </div>
         </div>
 
         <div
           v-html="item.body"
-          class="mb-10"
+          class="body-text mb-10 md:text-xl"
         />
 
-        <hr class="border-b-2 -ml-4">
       </div>
 
       <div class="mx-auto text-center md:mb-12">
         <a
-          class="border-b-2 border-lightblue-500 pb-1 px-2"
+          class="border-b-2 border-blue-500 pb-1 px-2"
           href="/information/old/"
         >
           過去のお知らせを見る
