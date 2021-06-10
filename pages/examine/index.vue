@@ -24,15 +24,3 @@
   </all-wrapper>
 
 </template>
-
-<style scoped>
-main {
-  min-height: 40vh;
-}
-
-@media screen and (min-width: 768px) {
-  main {
-    min-height: 50vh;
-  }
-}
-</style>
