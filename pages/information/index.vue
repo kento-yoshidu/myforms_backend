@@ -33,7 +33,7 @@
 
       </div>
 
-      <div class="mx-auto text-center md:mb-12">
+      <div class="mx-auto text-center mb-8 md:mb-12">
         <a
           class="border-b-2 border-blue-500 pb-1 px-2"
           href="/information/old/"

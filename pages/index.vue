@@ -11,7 +11,7 @@
         Nuxt Dental Clinicへようこそ
       </page-title>
 
-      <section class="relative mb-24 text-center mx-auto w-5/6">
+      <section class="relative mb-8 md:mb-24 text-center mx-auto w-5/6">
         <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-3 md:mb-5">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
         <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-12 md:mb-24">哲学がハングアップする星座がホームページ上で食事する。</p>
 
@@ -29,7 +29,6 @@
           <div class="absolute top-56 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
           <div class="absolute bottom-4 md:-bottom-8 right-16 md:right-2" style="background-color: rgba(30, 144, 255, 0.5); width: 10vw; height: 10vw;"></div>
         </div>
-
       </section>
 
       <section class="py-6 w-full mx-auto md-16 md:mt-32 bg-gray-50">
@@ -40,15 +39,15 @@
 
         <div class="mb-14 w-9/12 mx-auto">
           <a
-            class="mb-10 w-11/12 md:w-8/12 mx-auto transition-10"
+            class="block mb-10 w-11/12 md:w-8/12 mx-auto transition-10"
             v-for="(item, index) in infoItems" :key="index"
             :href="`/information/#${item.id}`"
           >
-            <div class="border-l-8 border-blue-400 pl-4 -ml-4 py-1 mb-4">
+            <div class="border-l-8 border-blue-400 pl-4 -ml-4 mb-4">
               <time class="text-sm md:text-base block md:w-1/6">
                 {{ item.date | formatDate }}
               </time>
-              <div class="md:w-10/12 text-lg md:text-2xl">
+              <div class="md:w-10/12 md:text-2xl">
                 {{ item.title }}
               </div>
             </div>
@@ -81,8 +80,7 @@
               class="absolute h-full w-full flex flex-col justify-center items-center"
               style="background-color: rgba(30, 144, 255, .3);"
             >
-              <p class="text-2xl md:text-4xl">虫歯治療</p>
-              <p class="text-lg">jgapirjpa</p>
+              <p class="text-xl md:text-4xl">虫歯治療</p>
             </div>
           </a>
 
@@ -95,8 +93,7 @@
               class="absolute h-full w-full flex flex-col justify-center items-center"
               style="background-color: rgba(30, 144, 255, .3);"
             >
-              <p class="text-2xl md:text-4xl">歯周病治療</p>
-              <p class="text-2xl">jgapirjpa</p>
+              <p class="text-xl md:text-4xl">歯周病治療</p>
             </div>
           </a>
 
@@ -109,8 +106,7 @@
               class="absolute h-full w-full flex flex-col justify-center items-center"
               style="background-color: rgba(30, 144, 255, .3);"
             >
-              <p class="text-2xl md:text-4xl">矯正歯科</p>
-              <p class="text-2xl">jgapirjpa</p>
+              <p class="text-xl md:text-4xl">矯正歯科</p>
             </div>
           </a>
 
@@ -123,8 +119,7 @@
               class="absolute h-full w-full flex flex-col justify-center items-center"
               style="background-color: rgba(30, 144, 255, .3);"
             >
-              <p class="text-2xl md:text-4xl">インプラント</p>
-              <p class="text-2xl">jgapirjpa</p>
+              <p class="text-xl md:text-4xl">インプラント</p>
             </div>
           </a>
           <a
@@ -136,8 +131,7 @@
               class="absolute h-full w-full flex flex-col justify-center items-center"
               style="background-color: rgba(30, 144, 255, .3);"
             >
-              <p class="text-2xl md:text-4xl">ホワイトニング</p>
-              <p class="text-2xl">jgapirjpa</p>
+              <p class="text-xl md:text-4xl">ホワイトニング</p>
             </div>
           </a>
           <a
@@ -149,8 +143,7 @@
               class="absolute h-full w-full flex flex-col justify-center items-center"
               style="background-color: rgba(30, 144, 255, .3);"
             >
-              <p class="text-2xl md:text-4xl">小児歯科</p>
-              <p class="text-2xl">jgapirjpa</p>
+              <p class="text-xl md:text-4xl">小児歯科</p>
             </div>
           </a>
         </div>
