@@ -15,7 +15,10 @@
         投稿日付　：　{{ item.date | formatDate }}
       </time>
 
-      <time class="block text-gray-600 md:text-lg text-right">
+      <time
+        class="block text-gray-600 md:text-lg text-right"
+        v-if="item.update"
+      >
         更新日付　：　{{ item.update | formatDate }}
       </time>
 
