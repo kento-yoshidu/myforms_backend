@@ -5,7 +5,7 @@
       visual="visual-blog"
     />
 
-    <main class="w-11/12 md:w-6/12 mx-auto pt-2">
+    <main class="w-10/12 md:w-6/12 mx-auto pt-2">
 
       <h1 class="page-title text-4xl text-gray-600 text-center mb-4 md:mb-12">
         {{ item.title }}
@@ -75,13 +75,13 @@ export default {
     border-bottom: 8px solid rgba(96, 165, 250, .9);
   }
   h2 {
-    margin: 40px 0 8px;
+    margin: 45px 0 8px;
     padding-left: 1rem;
     font-size: 2rem;
     border-left: 8px solid rgba(96, 165, 250, .9);
   }
   h3 {
-    margin: 30px 0 6px;
+    margin: 35px 0 0;
     font-size: 1.6rem;
   }
   p {
@@ -102,14 +102,13 @@ export default {
       border-bottom: 7px solid rgba(96, 165, 250, .9);
     }
     h2 {
-      margin: 15px 0 0px;
+      margin: 30px 0 0px;
       padding-left: 1rem;
       font-size: 1.6rem;
       border-left: 8px solid rgba(96, 165, 250, .9);
     }
     h3 {
-      margin: 10px 0 0;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
     p {
       margin-bottom: 5px;
