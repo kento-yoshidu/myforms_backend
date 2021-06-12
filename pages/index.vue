@@ -1,3 +1,4 @@
+
 <template>
   <all-wrapper>
 
@@ -31,7 +32,7 @@
         </div>
       </section>
 
-      <section class="py-6 w-full mx-auto md-16 md:mt-32 bg-gray-50">
+      <section class="w-full mx-auto md-16 md:mt-32 bg-gray-50">
         <base-heading
           title="Information"
           sub="クリニックからのお知らせ"
@@ -39,13 +40,13 @@
 
         <div class="mb-14 w-9/12 mx-auto">
           <a
-            class="block mb-10 w-11/12 md:w-8/12 mx-auto transition-10"
+            class="block mb-10 w-11/12 md:w-8/12 mx-auto group"
             v-for="(item, index) in infoItems" :key="index"
             :href="`/information/#${item.id}`"
           >
-            <div class="border-l-8 border-blue-400 pl-4 -ml-4 mb-4">
+            <div class="border-l-8 border-blue-400 pl-4 -ml-4 mb-4 group-hover:text-blue-500 transition-50">
               <time class="text-sm md:text-base block md:w-1/6">
-                {{ item.date | formatDate }}
+                <fa :icon="faClock" class="mr-2" />{{ item.date | formatDate }}
               </time>
               <div class="md:w-10/12 md:text-2xl">
                 {{ item.title }}
@@ -57,12 +58,12 @@
         </div>
 
         <base-button
-          name="お知らせを見る"
+          name="お知らせ一覧"
           link="information/"
         />
       </section>
 
-      <section class="py-4 md:py-8 md:w-4/6 mx-auto">
+      <section class="md:w-4/6 mx-auto">
         <!-- 診療内容 -->
         <base-heading
           title="Examine"
@@ -149,12 +150,12 @@
         </div>
 
         <base-button
-          name="詳しく見る"
-          link="examine"
+          name="診察内容"
+          link="examine/"
         />
       </section>
 
-      <section class="w-11/12 mx-auto py-2 md:py-8">
+      <section class="w-11/12 mx-auto">
         <!-- 診療内容 -->
         <base-heading
           title="Member"
@@ -179,12 +180,12 @@
         </div>
 
         <base-button
-          name="詳しく見る"
+          name="メンバー一覧"
           link="member"
         />
       </section>
 
-      <section class="w-10/12 md:w-full mx-auto py-4 md:py-8">
+      <section class="w-10/12 md:w-full mx-auto">
         <base-heading
           title="Blog"
           sub="ブログ"
@@ -192,18 +193,18 @@
 
         <div class="mb-14 w-full mx-auto">
           <a
-            class="block mb-10 w-full md:w-8/12 mx-auto transition-10"
+            class="block mb-10 w-full md:w-7/12 mx-auto group"
             v-for="(item, index) in blogItems" :key="index"
             :href="`/blog/${item.id}/`"
           >
-            <div class="flex items-center justify-between border-l-8 border-blue-400 pl-2 -ml-4 mb-4">
-              <img :src="item.image.url" class="w-2/12 shadow">
-              <div class="mx-2">
-                <time class="text-xs md:text-base block md:w-1/6">
-                  {{ item.date | formatDate }}
+            <div class="flex items-center justify-between border-l-8 border-blue-400 pl-2 -ml-4 mb-4 group-hover:text-blue-100">
+              <img :src="item.image.url" class="w-2/12 shadow md:w-1/12">
+              <div class="mx-2 md:mx-10">
+                <time class="text-xs md:text-base block md:w-3/6 mb-2  flex items-center">
+                  <fa :icon="faClock" class="mr-2" />{{ item.date | formatDate }}
                 </time>
-                <time class="text-xs md:text-base block md:w-1/6">
-                  {{ item.update | formatDate }}
+                <time class="text-xs md:text-base block md:w-2/6 flex items-center">
+                  <fa :icon="faSyncAlt" class="mr-2" />{{ item.update | formatDate }}
                 </time>
               </div>
               <div class="md:w-10/12 text-sm md:text-2xl">
@@ -216,7 +217,7 @@
         </div>
 
         <base-button
-          name="詳しく見る"
+          name="ブログ記事一覧"
           link="blog"
         />
       </section>
@@ -225,9 +226,20 @@
 </template>
 
 <script>
+
+import { faClock, fas, faSyncAlt } from '@fortawesome/free-solid-svg-icons'
+
 import axios from 'axios'
 
 export default {
+  computed: {
+    faClock() {
+      return faClock
+    },
+    faSyncAlt() {
+      return faSyncAlt
+    }
+  },
   async asyncData({ $config }) {
     const info = await axios.get(`${$config.apiUrl}/information?filters=isRecent[equals]true`, {
       headers: { 'X-API-KEY': $config.apiKey }
@@ -243,7 +255,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .main-img {
   background-image: url('~@/assets/img/main01.webp');
   height: 70vh;
@@ -258,5 +270,11 @@ export default {
   height: 50vh;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
 }
 </style>

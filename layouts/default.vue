@@ -12,6 +12,7 @@
 
 <style>
 html {
+  color: #444;
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
