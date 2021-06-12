@@ -184,30 +184,34 @@
         />
       </section>
 
-      <section class="w-8/12 md:w-full mx-auto py-4 md:py-8">
-        <!-- 診療内容 -->
+      <section class="w-10/12 md:w-full mx-auto py-4 md:py-8">
         <base-heading
           title="Blog"
           sub="ブログ"
         />
 
-        <div
-          class="flex flex-wrap justify-center mb-20 items-between md:w-3/6 mx-auto border-2"
-          v-for="(item, index) in blogItems" :key="index"
-        >
+        <div class="mb-14 w-full mx-auto">
           <a
-            :href="'/blog/' + item.id + '/'"
-            class="flex flex-col px-4 py-8 md:px-8 md:py-12 md:w-5/12 border-2 border-gray-400"
+            class="block mb-10 w-full md:w-8/12 mx-auto transition-10"
+            v-for="(item, index) in blogItems" :key="index"
+            :href="`/blog/${item.id}/`"
           >
-            <img
-              :src="`${item.image.url}`"
-              class="w-3/6 md:w-6/12 mx-auto mb-10 md:mb-2"
-            />
+            <div class="flex items-center justify-between border-l-8 border-blue-400 pl-2 -ml-4 mb-4">
+              <img :src="item.image.url" class="w-2/12 shadow">
+              <div class="mx-2">
+                <time class="text-xs md:text-base block md:w-1/6">
+                  {{ item.date | formatDate }}
+                </time>
+                <time class="text-xs md:text-base block md:w-1/6">
+                  {{ item.update | formatDate }}
+                </time>
+              </div>
+              <div class="md:w-10/12 text-sm md:text-2xl">
+                {{ item.title }}
+              </div>
+            </div>
 
-            <time class="text-sm md:text-lg mb-1 block fontsemi-bold">
-              {{ item.date | formatDate }}
-            </time>
-            {{ item.title }}
+            <hr class="border-b-2 -ml-4">
           </a>
         </div>
 
