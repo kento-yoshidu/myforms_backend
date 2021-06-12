@@ -57,7 +57,7 @@
         </div>
 
         <base-button
-          name="お知らせを見る"
+          name="お知らせ一覧"
           link="information/"
         />
       </section>
@@ -149,8 +149,8 @@
         </div>
 
         <base-button
-          name="詳しく見る"
-          link="examine"
+          name="診察内容"
+          link="examine/"
         />
       </section>
 
@@ -179,7 +179,7 @@
         </div>
 
         <base-button
-          name="詳しく見る"
+          name="メンバー一覧"
           link="member"
         />
       </section>
@@ -192,17 +192,17 @@
 
         <div class="mb-14 w-full mx-auto">
           <a
-            class="block mb-10 w-full md:w-8/12 mx-auto transition-10"
+            class="block mb-10 w-full md:w-7/12 mx-auto group"
             v-for="(item, index) in blogItems" :key="index"
             :href="`/blog/${item.id}/`"
           >
-            <div class="flex items-center justify-between border-l-8 border-blue-400 pl-2 -ml-4 mb-4">
-              <img :src="item.image.url" class="w-2/12 shadow">
-              <div class="mx-2">
-                <time class="text-xs md:text-base block md:w-1/6">
+            <div class="flex items-center justify-between border-l-8 border-blue-400 pl-2 -ml-4 mb-4 group-hover:text-blue-100">
+              <img :src="item.image.url" class="w-2/12 shadow md:w-1/12">
+              <div class="mx-2 md:mx-10">
+                <time class="text-xs md:text-base block md:w-2/6 mb-2">
                   {{ item.date | formatDate }}
                 </time>
-                <time class="text-xs md:text-base block md:w-1/6">
+                <time class="text-xs md:text-base block md:w-2/6">
                   {{ item.update | formatDate }}
                 </time>
               </div>
@@ -216,7 +216,7 @@
         </div>
 
         <base-button
-          name="詳しく見る"
+          name="ブログ記事一覧"
           link="blog"
         />
       </section>

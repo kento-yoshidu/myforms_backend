@@ -23,14 +23,22 @@
           </div>
         </a>
       </div>
+
+      <base-button
+        name="HOME"
+        link="/"
+      />
     </main>
+
   </all-wrapper>
 </template>
 
 <script>
 import axios from 'axios'
+import BaseButton from '~/components/BaseButton.vue'
 
 export default {
+  components: { BaseButton },
   async asyncData({ $config }) {
     const { data } = await axios.get(`${$config.apiUrl}/blog`, {
       headers: { 'X-API-KEY': $config.apiKey }
