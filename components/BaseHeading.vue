@@ -1,6 +1,6 @@
 <template>
-  <h2 class="font-sans text-3xl md:text-8xl text-gray-600 text-center mb-8 md:mb-14">
-    {{ title }} <span class="text-xs md:text-lg">{{ sub }}</span>
+  <h2 class="font-sans text-3xl md:text-9xl text-gray-600 text-center mb-8 md:mb-14">
+    {{ title }} <span class="text-xs md:text-3xl">{{ sub }}</span>
   </h2>
 </template>
 

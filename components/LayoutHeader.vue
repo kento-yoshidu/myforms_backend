@@ -1,21 +1,21 @@
 <template>
-  <header class="pt-4 md:pt-3 pb-3 md:pb-3 text-gray-600">
+  <header class="pt-4 md:pt-6 pb-3 md:pb-6">
     <div class="flex justify-between items-center px-10 md:px-20">
       <h1 class="text-2xl">
         <a
           href="/"
-          class="hover:text-blue-400"
+          class="text-3xl md:text-5xl hover:text-blue-400"
         >
           Nuxt Dental Clinic
         </a>
       </h1>
 
-      <div class="text-right hidden md:block">
+      <div class="hidden md:text-3xl md:text-right md:block">
         <p>滋賀県草津市追分南99-99-99</p>
         <tel>090-0000-0000</tel>
       </div>
 
-      <div class="text-gray-600 md:hidden">
+      <div class="md:hidden">
         <button
           class="focus:outline-none"
           @click="isOpen = !isOpen"
@@ -35,19 +35,18 @@
     </div>
 
     <nav
-      class="w-full md:block absolute left-0 md:static z-20 bg-white"
+      class="w-full md:block absolute left-0 md:static z-20 bg-white text-lg md:text-2xl"
       :class="isOpen ? 'block' : 'hidden'"
     >
       <ul class="md:flex md:justify-center md:items-end text-center pt-5">
         <li class="w-full md:w-auto border-t border-b md:border-l md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
           <a
             href="/"
-            class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
-            >
-              <div class="mb-1 text-sm text-gray-800">ホーム</div> 
-              <div class="text-xs text-blue-400 font-bold">HOME</div> 
-            </a
+            class="inline-block md:block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
+            <div class="mb-1">ホーム</div> 
+            <div class="text-blue-400 font-bold">HOME</div> 
+          </a >
         </li>
 
         <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
@@ -55,8 +54,8 @@
             href="/examine/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1 text-sm text-gray-800">診療内容</div> 
-            <div class="text-xs text-blue-400 font-bold">EXAMINE</div> 
+            <div class="mb-1">診療内容</div> 
+            <div class="text-blue-400 font-bold">EXAMINE</div> 
           </a>
         </li>
 
@@ -65,8 +64,8 @@
             href="/information/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1 text-sm text-gray-800">お知らせ</div> 
-            <div class="text-xs text-blue-400 font-bold">INFORMATION</div> 
+            <div class="mb-1">お知らせ</div> 
+            <div class="text-blue-400 font-bold">INFORMATION</div> 
           </a>
         </li>
 
@@ -76,8 +75,8 @@
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
 
           >
-            <div class="mb-1 text-sm text-gray-800">メンバー</div> 
-            <div class="text-xs text-blue-400 font-bold">MEMBER</div> 
+            <div class="mb-1">メンバー</div> 
+            <div class="text-blue-400 font-bold">MEMBER</div> 
           </a>
         </li>
 
@@ -86,8 +85,8 @@
             href="/blog/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1 text-sm text-gray-800">ブログ</div> 
-            <div class="text-xs text-blue-400 font-bold">BLOG</div> 
+            <div class="mb-1">ブログ</div> 
+            <div class="text-blue-400 font-bold">BLOG</div> 
           </a>
         </li>
       </ul>
