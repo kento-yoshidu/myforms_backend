@@ -14,6 +14,7 @@
 html {
   color: #444;
   font-size: 62.5%;
+  line-height: 1.5;
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
 }

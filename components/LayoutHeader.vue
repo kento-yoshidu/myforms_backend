@@ -35,7 +35,7 @@
     </div>
 
     <nav
-      class="w-full md:block absolute left-0 md:static z-20 bg-white"
+      class="w-full md:block absolute left-0 md:static z-20 bg-white text-lg md:text-2xl"
       :class="isOpen ? 'block' : 'hidden'"
     >
       <ul class="md:flex md:justify-center md:items-end text-center pt-5">
@@ -44,8 +44,8 @@
             href="/"
             class="inline-block md:block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1 text-lg text-gray-800">ホーム</div> 
-            <div class="text-xs text-blue-400 font-bold">HOME</div> 
+            <div class="mb-1">ホーム</div> 
+            <div class="text-blue-400 font-bold">HOME</div> 
           </a >
         </li>
 
@@ -54,8 +54,8 @@
             href="/examine/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1 text-sm text-gray-800">診療内容</div> 
-            <div class="text-xs text-blue-400 font-bold">EXAMINE</div> 
+            <div class="mb-1">診療内容</div> 
+            <div class="text-blue-400 font-bold">EXAMINE</div> 
           </a>
         </li>
 
@@ -64,8 +64,8 @@
             href="/information/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1 text-sm text-gray-800">お知らせ</div> 
-            <div class="text-xs text-blue-400 font-bold">INFORMATION</div> 
+            <div class="mb-1">お知らせ</div> 
+            <div class="text-blue-400 font-bold">INFORMATION</div> 
           </a>
         </li>
 
@@ -75,8 +75,8 @@
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
 
           >
-            <div class="mb-1 text-sm text-gray-800">メンバー</div> 
-            <div class="text-xs text-blue-400 font-bold">MEMBER</div> 
+            <div class="mb-1">メンバー</div> 
+            <div class="text-blue-400 font-bold">MEMBER</div> 
           </a>
         </li>
 
@@ -85,8 +85,8 @@
             href="/blog/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1 text-sm text-gray-800">ブログ</div> 
-            <div class="text-xs text-blue-400 font-bold">BLOG</div> 
+            <div class="mb-1">ブログ</div> 
+            <div class="text-blue-400 font-bold">BLOG</div> 
           </a>
         </li>
       </ul>

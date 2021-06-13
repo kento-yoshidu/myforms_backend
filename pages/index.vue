@@ -1,7 +1,5 @@
-
 <template>
   <all-wrapper>
-
     <layout-main-visual
       title="Nuxt Dental Clinic"
       message="恐るべき結婚式がオウム貝のような戦艦を開発するかも知れない。"
@@ -13,21 +11,21 @@
       </page-title>
 
       <section class="relative mb-8 md:mb-24 text-center mx-auto w-5/6">
-        <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-3 md:mb-5">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
-        <p class="md:w-3/6 md:mx-auto md:text-2xl text-center text-blue-500 tracking-widest mb-12 md:mb-24">哲学がハングアップする星座がホームページ上で食事する。</p>
+        <p class="md:w-3/6 md:mx-auto md:text-4xl text-center text-blue-500 tracking-widest mb-3 md:mb-5">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
+        <p class="md:w-3/6 md:mx-auto md:text-4xl text-center text-blue-500 tracking-widest mb-12 md:mb-24">哲学がハングアップする星座がホームページ上で食事する。</p>
 
         <div
-          class="md:mt-28 main-img relative bg-center bg-cover"
+          class="md:mt-28 main-img relative bg-center bg-cover md:text-3xl"
         >
-          <div class="absolute top-0 md:left-40 md:w-2/6 bg-white h-full p-2 md:p-10">
-            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">嬉しいことに、布団が踊る硫黄が遠ざかる気がした子猫を搭載したヴァイオリンが酒に発明される。</p>
-            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">つまるところ、蛙が勢い良く蒸気を吹き出す絆創膏のサポートを打ち切るまでもない。</p>
-            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">シャーロック・ホームズがドラゴンクエストテクノロジーとも呼ばれるはさみに恋文を送るなんてことはないが、マッシュルームが地獄から来た登山を持ち上げる。</p>
+          <div class="absolute top-0 md:left-40 md:w-2/6 bg-white h-full p-2 md:py-20 md:px-10">
+            <p class="mx-auto mb-3 md:mb-10 font-semibold tracking-widest">嬉しいことに、布団が踊る硫黄が遠ざかる気がした子猫を搭載したヴァイオリンが酒に発明される。</p>
+            <p class="mx-auto mb-3 md:mb-10 font-semibold tracking-widest">つまるところ、蛙が勢い良く蒸気を吹き出す絆創膏のサポートを打ち切るまでもない。</p>
+            <p class="mx-auto mb-3 font-semibold tracking-widest">シャーロック・ホームズがドラゴンクエストテクノロジーとも呼ばれるはさみに恋文を送るなんてことはないが、マッシュルームが地獄から来た登山を持ち上げる。</p>
           </div>
 
-          <div class="absolute -top-2 md:-top-10 left-4 md:left-28" style="background-color: rgba(30, 144, 255, 0.1); width: 20vw; height: 20vw;"></div>
-          <div class="absolute top-28 right-44" style="background-color: rgba(0, 114, 225, 0.4); width: 9vw; height: 9vw;"></div>
-          <div class="absolute top-56 left-16 md:left-96" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
+          <div class="absolute -top-2 md:-top-10 left-4 md:left-28 z-1" style="background-color: rgba(30, 144, 255, 0.1); width: 20vw; height: 20vw;"></div>
+          <div class="absolute top-28 right-44 -z-1" style="background-color: rgba(0, 114, 225, 0.4); width: 9vw; height: 9vw;"></div>
+          <div class="absolute top-56 left-16 md:left-96 z-1" style="background-color: rgba(30, 144, 255, 0.2); width: 10vw; height: 10vw;"></div>
           <div class="absolute bottom-4 md:-bottom-8 right-16 md:right-2" style="background-color: rgba(30, 144, 255, 0.5); width: 10vw; height: 10vw;"></div>
         </div>
       </section>
@@ -40,15 +38,15 @@
 
         <div class="mb-14 w-9/12 mx-auto">
           <a
-            class="block mb-10 w-11/12 md:w-8/12 mx-auto group"
+            class="block mb-10 w-11/12 md:w-6/12 mx-auto group"
             v-for="(item, index) in infoItems" :key="index"
             :href="`/information/#${item.id}`"
           >
             <div class="border-l-8 border-blue-400 pl-4 -ml-4 mb-4 group-hover:text-blue-500 transition-50">
-              <time class="text-sm md:text-base block md:w-1/6">
+              <time class="text-sm md:text-2xl block mb-2">
                 <fa :icon="faClock" class="mr-2" />{{ item.date | formatDate }}
               </time>
-              <div class="md:w-10/12 md:text-2xl">
+              <div class="md:w-10/12 md:text-4xl">
                 {{ item.title }}
               </div>
             </div>
