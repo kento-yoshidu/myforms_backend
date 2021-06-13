@@ -166,10 +166,10 @@
           >
           </div>
 
-          <div class="mb-8 w-10/12 md:w-4/12 h-full p-2">
-            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">嬉汚らわしい電信柱が雀の一部であるプロレスラーの本質であるに違いない。虫かごが焼きそばを売りに出す。</p>
-            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">筋肉はその物体のようにも見えることがある。</p>
-            <p class="md:text-lg mx-auto mb-3 font-semibold text-gray-800 tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
+          <div class="mb-8 w-10/12 md:w-4/12 h-full p-2 md:text-3xl">
+            <p class="mx-auto mb-6 font-semibold tracking-widest">嬉汚らわしい電信柱が雀の一部であるプロレスラーの本質であるに違いない。虫かごが焼きそばを売りに出す。</p>
+            <p class="mx-auto mb-6 font-semibold tracking-widest">筋肉はその物体のようにも見えることがある。</p>
+            <p class="mx-auto mb-6 font-semibold tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
           </div>
 
           <div class="absolute top-20 right-44" style="background-color: rgba(0, 114, 225, 0.6); width: 9vw; height: 9vw;"></div>
@@ -195,17 +195,17 @@
             v-for="(item, index) in blogItems" :key="index"
             :href="`/blog/${item.id}/`"
           >
-            <div class="flex items-center justify-between border-l-8 border-blue-400 pl-2 -ml-4 mb-4 group-hover:text-blue-100">
+            <div class="flex items-center justify-between border-l-8 border-blue-400 pl-2 -ml-4 mb-4 group-hover:text-blue-500">
               <img :src="item.image.url" class="w-2/12 shadow md:w-1/12">
               <div class="mx-2 md:mx-10">
-                <time class="text-xs md:text-base block md:w-3/6 mb-2  flex items-center">
+                <time class="text-xs md:text-2xl block md:w-3/6 mb-2  flex items-center">
                   <fa :icon="faClock" class="mr-2" />{{ item.date | formatDate }}
                 </time>
-                <time class="text-xs md:text-base block md:w-2/6 flex items-center">
+                <time class="text-xs md:text-2xl block md:w-2/6 flex items-center">
                   <fa :icon="faSyncAlt" class="mr-2" />{{ item.update | formatDate }}
                 </time>
               </div>
-              <div class="md:w-10/12 text-sm md:text-2xl">
+              <div class="md:w-10/12 text-sm md:text-4xl">
                 {{ item.title }}
               </div>
             </div>
