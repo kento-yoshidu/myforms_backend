@@ -19,7 +19,7 @@
         {{ title }}
       </h1>
       <p
-        class="mt-4 md:ml-4 text-sm md:text-3xl md:w-10/12 text-gray-100 tracking-widest leading-6"
+        class="mt-4 md:ml-4 text-2xl md:text-3xl md:w-10/12 text-gray-100 tracking-widest leading-6"
       >
         {{ message }}
       </p>
@@ -49,8 +49,15 @@ export default {
 
 <style scoped>
 .visual-image {
-  height: 50vh;
+  height: 30vh;
 }
+
+@media screen and (min-width: 768px) {
+  .visual-image {
+    height: 50vh;
+  } 
+}
+
 .visual-home {
   background-image: url('~@/assets/img/visual-home.webp');
 }

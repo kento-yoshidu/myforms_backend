@@ -2,33 +2,30 @@
   <all-wrapper>
     <layout-main-visual
       title="最新のお知らせ"
+      message="ここ最近のお知らせ一覧です"
       visual="visual-information"
     />
 
     <!-- main -->
     <main class="w-full md:max-w-4xl mx-auto px-6 md:px-0">
 
-      <section class="mb-2 text-center">
-        <p class="text-lg md:text-2xl text-center tracking-widest mb-10" style="color: orange">最新のお知らせ一覧です。</p>
-      </section>
-
       <div
-        class="mb-10 md:mb-20 w-11/12 md:w-8/12 mx-auto transition-10 border-b-2 border-blue-200"
+        class="mb-10 md:mb-20 w-11/12 md:w-10/12 mx-auto transition-10 border-b-2 border-blue-200 border"
         :id="item.id"
         v-for="(item, index) in items" :key="index"
       >
         <div class="border-l-8 border-blue-400 pl-4 -ml-4 py-1 mb-4">
-          <time class="text-sm md:text-base block md:w-1/6">
+          <time class="text-xl md:text-2xl block md:w-1/6">
             {{ item.date | formatDate }}
           </time>
-          <div class="md:w-10/12 text-lg md:text-3xl">
+          <div class="md:w-10/12 text-3xl md:text-4xl">
             {{ item.title }}
           </div>
         </div>
 
         <div
           v-html="item.body"
-          class="body-text mb-10 md:text-xl"
+          class="body-text mb-10 text-2xl md:text-3xl"
         />
 
       </div>
