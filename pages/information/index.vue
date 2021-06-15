@@ -10,7 +10,7 @@
     <main class="w-full md:max-w-4xl mx-auto px-6 md:px-0">
 
       <div
-        class="mb-10 md:mb-20 w-11/12 md:w-10/12 mx-auto transition-10 border-b-2 border-blue-200 border"
+        class="mb-10 md:mb-20 w-11/12 md:w-10/12 mx-auto transition-10 border-b-2 border-blue-200"
         :id="item.id"
         v-for="(item, index) in items" :key="index"
       >
