@@ -10,14 +10,14 @@
         Nuxt Dental Clinicへようこそ
       </page-title>
 
-      <section class="relative mx-auto w-5/6 mt-8 mb-2 md:mb-24 text-2xl md:text-4xl text-center tracking-widest border">
+      <section class="relative mx-auto w-5/6 mt-8 mb-2 md:mb-24 md:text-2xl text-center tracking-widest border-2">
         <p class="md:w-3/6 md:mx-auto text-blue-500 mb-3 md:mb-5">鳩時計がすごい勇敢なロボットがマッシュルームの上で動作するえんどう豆を形づくる。</p>
-        <p class="md:w-3/6 md:mx-auto text-blue-500 mb-12 md:mb-24">哲学がハングアップする星座がホームページ上で食事する。</p>
+        <p class="md:w-3/6 md:mx-auto text-blue-500 mb-8 md:mb-24">哲学がハングアップする星座がホームページ上で食事する。</p>
 
         <div
-          class="md:mt-28 main-img relative bg-center bg-cover md:text-3xl"
+          class="md:mt-20 main-img relative bg-center bg-cover md:text-xl"
         >
-          <div class="absolute top-0 md:left-40 md:w-2/6 bg-white md:h-full p-2 md:py-20 md:px-10">
+          <div class="md:absolute top-0 md:left-40 md:w-2/6 bg-white p-2 md:py-16 md:px-10">
             <p class="mx-auto mb-4 md:mb-10 font-semibold">嬉しいことに、布団が踊る硫黄が遠ざかる気がした子猫を搭載したヴァイオリンが酒に発明される。</p>
             <p class="mx-auto mb-4 md:mb-10 font-semibold">つまるところ、蛙が勢い良く蒸気を吹き出す絆創膏のサポートを打ち切るまでもない。</p>
             <p class="mx-auto mb-4 font-semibold">シャーロック・ホームズがドラゴンクエストテクノロジーとも呼ばれるはさみに恋文を送るなんてことはないが、マッシュルームが地獄から来た登山を持ち上げる。</p>
@@ -43,10 +43,10 @@
             :href="`/information/#${item.id}`"
           >
             <div class="border-l-8 border-blue-400 pl-4 -ml-4 mb-4 group-hover:text-blue-500 transition-50">
-              <time class="text-sm md:text-2xl block mb-2">
+              <time class="text-sm md:text-lg block mb-2">
                 <fa :icon="faClock" class="mr-2" />{{ item.date | formatDate }}
               </time>
-              <div class="md:w-10/12 md:text-4xl">
+              <div class="md:w-10/12 md:text-2xl">
                 {{ item.title }}
               </div>
             </div>
@@ -166,7 +166,7 @@
           >
           </div>
 
-          <div class="mb-4 w-10/12 md:w-4/12 h-full p-2 md:text-3xl">
+          <div class="mb-4 w-10/12 md:w-4/12 p-2 md:text-3xl">
             <p class="mx-auto mb-6 font-semibold tracking-widest">嬉汚らわしい電信柱が雀の一部であるプロレスラーの本質であるに違いない。虫かごが焼きそばを売りに出す。</p>
             <p class="mx-auto mb-6 font-semibold tracking-widest">筋肉はその物体のようにも見えることがある。</p>
             <p class="mx-auto mb-6 font-semibold tracking-widest">雀は強力に誕生すると発表されたが、結局は、ノアの箱船のごとき食物連鎖が帆船であると信じられていた。</p>
@@ -198,14 +198,14 @@
             <div class="flex items-center justify-between border-l-8 border-blue-400 pl-2 -ml-4 mb-4 group-hover:text-blue-500">
               <img :src="item.image.url" class="w-2/12 shadow md:w-1/12">
               <div class="mx-2 md:mx-10">
-                <time class="text-xs md:text-2xl block md:w-3/6 mb-2  flex items-center">
+                <time class="text-xs md:text-lg block md:w-3/6 mb-2  flex items-center">
                   <fa :icon="faClock" class="mr-2" />{{ item.date | formatDate }}
                 </time>
-                <time class="text-xs md:text-2xl block md:w-2/6 flex items-center">
+                <time class="text-xs md:text-lg block md:w-2/6 flex items-center">
                   <fa :icon="faSyncAlt" class="mr-2" />{{ item.update | formatDate }}
                 </time>
               </div>
-              <div class="md:w-10/12 text-sm md:text-4xl">
+              <div class="md:w-10/12 text-sm md:text-2xl">
                 {{ item.title }}
               </div>
             </div>

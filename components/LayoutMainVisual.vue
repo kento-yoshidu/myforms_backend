@@ -12,14 +12,14 @@
     </div>
 
     <!-- 青い背景の説明文 -->
-    <div class="absolute top-20 z-2 w-9/12 md:w-5/12 ml-5 md:ml-36 p-4 md:py-10 md:px-16"
+    <div class="absolute top-10 z-2 w-10/12 md:w-6/12 ml-5 md:ml-36 p-4 md:py-10 md:px-16"
       style="background-image: linear-gradient(to right, rgba(30,144,255, 0.4), rgba(0, 114, 165, 0.8));"
     >
-      <h1 class="text-gray-200 font-sm text-4xl md:text-8xl text-shadow mb-3 md:mb-10">
+      <h1 class="text-gray-200 font-sm text-2xl md:text-6xl text-shadow mb-3 md:mb-10">
         {{ title }}
       </h1>
       <p
-        class="mt-4 md:ml-4 text-2xl md:text-3xl md:w-10/12 text-gray-100 tracking-widest leading-6"
+        class="mt-4 md:ml-4 text-lg md:text-2xl md:w-11/12 text-gray-100 tracking-widest leading-8"
       >
         {{ message }}
       </p>
