@@ -1,10 +1,10 @@
 <template>
   <header class="pt-4 md:pt-6 pb-3 md:pb-6">
     <div class="flex justify-between items-center px-10 md:px-20">
-      <h1 class="text-2xl">
+      <h1>
         <a
           href="/"
-          class="text-3xl md:text-5xl hover:text-blue-400"
+          class="text-xl md:text-4xl hover:text-blue-400"
         >
           Nuxt Dental Clinic
         </a>
@@ -35,11 +35,11 @@
     </div>
 
     <nav
-      class="w-full md:block absolute left-0 md:static z-20 bg-white text-lg md:text-2xl"
+      class="w-full md:block absolute left-0 md:static z-20 bg-white text-sm md:text-lg"
       :class="isOpen ? 'block' : 'hidden'"
     >
       <ul class="md:flex md:justify-center md:items-end text-center pt-5">
-        <li class="w-full md:w-auto border-t border-b md:border-l md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
+        <li class="w-full md:w-auto border-t border-b md:border-l md:border-r md:border-t-0 md:border-b-0 py-2 md:p-3">
           <a
             href="/"
             class="inline-block md:block py-0 md:py-2 md:px-5 md:px-0 w-full"
@@ -49,7 +49,7 @@
           </a >
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
+        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 py-2 md:p-3">
           <a
             href="/examine/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
@@ -59,7 +59,7 @@
           </a>
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
+        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 py-2 md:p-3">
           <a
             href="/information/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
@@ -69,7 +69,7 @@
           </a>
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
+        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 py-2 md:p-3">
           <a
             href="/member/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
@@ -80,7 +80,7 @@
           </a>
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 p-1 md:p-3">
+        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 py-2 md:p-3">
           <a
             href="/blog/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
