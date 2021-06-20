@@ -41,6 +41,25 @@ export default {
           headers: { 'X-API-KEY': $config.apiKey }
         }
       )
+
+      let next = null
+
+      const resNext = await axios.get(`${$config.apiUrl}/blog/` + 
+        '?limit=1' + 
+        '&fields=id,title,date' +
+        '&orders=-date' +
+        '&filters=date[less_than]current.date', {
+        headers: { 'X-API-KEY': $config.apiKey }
+      })
+
+      console.log(resNext.data)
+
+      if ( resNext.data.title && resNext.data.title.length > 0 ) {
+        next = resNext.data.title
+      }
+
+      console.log(next)
+
       return {
         item: data
       }
@@ -54,7 +73,7 @@ export default {
     return {
       title: this.item.title,
     }
-  }
+  },
 }
 </script>
 
