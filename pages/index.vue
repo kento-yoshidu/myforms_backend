@@ -314,7 +314,7 @@
       <div class="relative flex flex-row-reverse justify-around md:mb-12">
         <div class="hidden md:block main-img2 md:w-6/12"></div>
 
-        <div class="mb-4 w-10/12 md:w-4/12 p-2 md:text-2xl">
+        <div class="mb-4 w-10/12 md:w-4/12 p-2 md:text-xl">
           <p class="mx-auto mb-6 font-semibold tracking-widest">
             嬉汚らわしい電信柱が雀の一部であるプロレスラーの本質であるに違いない。虫かごが焼きそばを売りに出す。
           </p>
