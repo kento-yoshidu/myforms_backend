@@ -7,7 +7,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate(title) {
-      return ( title ? `${title} | ` : '') + process.env.npm_package_name
+      return (title ? `${title} | ` : '') + process.env.npm_package_name
     },
     htmlAttrs: {
       lang: 'en',
@@ -41,7 +41,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -57,13 +57,13 @@ export default {
     apiUrl: API_URL,
   },
   privateRuntimeConfig: {
-    apiKey: API_KEY
+    apiKey: API_KEY,
   },
 
   /*
-  * FontAwesome
-  */
+   * FontAwesome
+   */
   fontawesome: {
-    component: 'fa'
-  }
+    component: 'fa',
+  },
 }

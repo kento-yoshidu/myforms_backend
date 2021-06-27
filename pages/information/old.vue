@@ -1,21 +1,23 @@
 <template>
   <all-wrapper>
-    <layout-main-visual
-      title="過去のお知らせ"
-      visual="visual-information"
-    />
+    <layout-main-visual title="過去のお知らせ" visual="visual-information" />
 
     <!-- main -->
     <main class="w-full md:max-w-4xl mx-auto px-6 md:px-0">
-
       <section class="mb-2 text-center">
-        <p class="text-lg md:text-2xl text-center tracking-widest mb-10" style="color: orange">過去のお知らせ一覧です。</p>
+        <p
+          class="text-lg md:text-2xl text-center tracking-widest mb-10"
+          style="color: orange"
+        >
+          過去のお知らせ一覧です。
+        </p>
       </section>
 
       <div
-        class="mb-10 w-11/12 md:w-8/12 mx-auto transition-10 borde-2"
+        v-for="(item, index) in items"
         :id="item.id"
-        v-for="(item, index) in items" :key="index"
+        :key="index"
+        class="mb-10 w-11/12 md:w-8/12 mx-auto transition-10 borde-2"
       >
         <div class="border-l-8 border-blue-400 pl-4 -ml-4 py-1 mb-4">
           <time class="text-sm md:text-base block md:w-1/6">
@@ -26,12 +28,9 @@
           </div>
         </div>
 
-        <div
-          v-html="item.body"
-          class="mb-10"
-        />
+        <div class="mb-10" v-html="item.body" />
 
-        <hr class="border-b-2 -ml-4">
+        <hr class="border-b-2 -ml-4" />
       </div>
 
       <div class="mx-auto text-center mb-8 md:mb-12">
@@ -43,10 +42,7 @@
         </a>
       </div>
 
-      <base-button
-        name="HOME"
-        link="/"
-      />
+      <base-button name="HOME" link="/" />
     </main>
   </all-wrapper>
 </template>
@@ -56,9 +52,12 @@ import axios from 'axios'
 
 export default {
   async asyncData({ $config }) {
-    const { data } = await axios.get(`${$config.apiUrl}/information?filters=isRecent[equals]false`, {
-      headers: { 'X-API-KEY': $config.apiKey }
-    })
+    const { data } = await axios.get(
+      `${$config.apiUrl}/information?filters=isRecent[equals]false`,
+      {
+        headers: { 'X-API-KEY': $config.apiKey },
+      }
+    )
     return {
       items: data.contents,
     }

@@ -1,25 +1,50 @@
 <template>
   <!-- top -->
-  <div
-    class="relative mt-3 md:pt-11 md:pb-32 h-48 mb-10 visual-image"
-  >
+  <div class="relative mt-3 md:pt-11 md:pb-32 h-48 mb-10 visual-image">
     <!-- 背景画像 -->
-    <div :class="`absolute top-0 right-0 w-10/12 h-full md:h-full m-auto bg-center bg-cover ${visual}`">
-      <span
-        id="blackOverlay"
-        class="w-full h-full absolute opacity-75"
-      ></span>
+    <div
+      :class="`absolute top-0 right-0 w-10/12 h-full md:h-full m-auto bg-center bg-cover ${visual}`"
+    >
+      <span id="blackOverlay" class="w-full h-full absolute opacity-75"></span>
     </div>
 
     <!-- 青い背景の説明文 -->
-    <div class="absolute top-10 z-2 w-10/12 md:w-6/12 ml-5 md:ml-36 p-4 md:py-10 md:px-16"
-      style="background-image: linear-gradient(to right, rgba(30,144,255, 0.4), rgba(0, 114, 165, 0.8));"
+    <div
+      class="
+        absolute
+        top-4
+        z-2
+        w-10/12
+        md:w-6/12
+        ml-5
+        md:ml-36
+        p-4
+        md:py-10 md:px-16
+      "
+      style="background-image: linear-gradient(to right,rgba(30, 144, 255, 0.4), rgba(0, 114, 165, 0.8))"
     >
-      <h1 class="text-gray-200 font-sm text-2xl md:text-6xl text-shadow mb-3 md:mb-10">
+      <h1
+        class="
+          text-gray-200
+          font-sm
+          text-3xl
+          md:text-6xl
+          text-shadow
+          mb-3
+          md:mb-10
+        "
+      >
         {{ title }}
       </h1>
       <p
-        class="mt-4 md:ml-4 text-lg md:text-2xl md:w-11/12 text-gray-100 tracking-widest leading-8"
+        class="
+          mt-4
+          md:ml-4
+          text-base
+          md:text-2xl md:w-11/12
+          text-gray-100
+          tracking-widest
+        "
       >
         {{ message }}
       </p>
@@ -33,17 +58,17 @@ export default {
   props: {
     title: {
       type: String,
-      default: "",
+      default: '',
     },
     message: {
       type: String,
-      default: ''
+      default: '',
     },
     visual: {
       type: String,
-      default: 'visual-home'
+      default: 'visual-home',
     },
-  }
+  },
 }
 </script>
 
@@ -55,7 +80,7 @@ export default {
 @media screen and (min-width: 768px) {
   .visual-image {
     height: 50vh;
-  } 
+  }
 }
 
 .visual-home {

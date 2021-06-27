@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'allWrapper'
+  name: 'AllWrapper',
 }
 </script>
