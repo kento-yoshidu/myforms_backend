@@ -2,10 +2,7 @@
   <header class="pt-4 md:pt-6 pb-3 md:pb-6">
     <div class="flex justify-between items-center px-10 md:px-20">
       <h1>
-        <a
-          href="/"
-          class="text-xl md:text-4xl hover:text-blue-400"
-        >
+        <a href="/" class="text-xl md:text-4xl hover:text-blue-400">
           Nuxt Dental Clinic
         </a>
       </h1>
@@ -16,10 +13,7 @@
       </div>
 
       <div class="md:hidden">
-        <button
-          class="focus:outline-none"
-          @click="isOpen = !isOpen"
-        >
+        <button class="focus:outline-none" @click="isOpen = !isOpen">
           <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
             <path
               v-show="!isOpen"
@@ -35,63 +29,116 @@
     </div>
 
     <nav
-      class="w-full md:block absolute left-0 md:static z-20 bg-white text-sm md:text-lg"
+      class="
+        w-full
+        md:block
+        absolute
+        left-0
+        md:static
+        z-20
+        bg-white
+        text-sm
+        md:text-lg
+      "
       :class="isOpen ? 'block' : 'hidden'"
     >
       <ul class="md:flex md:justify-center md:items-end text-center pt-5">
-        <li class="w-full md:w-auto border-t border-b md:border-l md:border-r md:border-t-0 md:border-b-0 py-2 md:p-3">
+        <li
+          class="
+            w-full
+            md:w-auto
+            border-t border-b
+            md:border-l md:border-r md:border-t-0 md:border-b-0
+            py-2
+            md:p-3
+          "
+        >
           <a
             href="/"
             class="inline-block md:block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1">ホーム</div> 
-            <div class="text-blue-400 font-bold">HOME</div> 
-          </a >
+            <div class="mb-1">ホーム</div>
+            <div class="text-blue-400 font-bold">HOME</div>
+          </a>
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 py-2 md:p-3">
+        <li
+          class="
+            w-full
+            md:w-auto
+            border-b
+            md:border-r md:border-t-0 md:border-b-0
+            py-2
+            md:p-3
+          "
+        >
           <a
             href="/examine/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1">診療内容</div> 
-            <div class="text-blue-400 font-bold">EXAMINE</div> 
+            <div class="mb-1">診療内容</div>
+            <div class="text-blue-400 font-bold">EXAMINE</div>
           </a>
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 py-2 md:p-3">
+        <li
+          class="
+            w-full
+            md:w-auto
+            border-b
+            md:border-r md:border-t-0 md:border-b-0
+            py-2
+            md:p-3
+          "
+        >
           <a
             href="/information/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1">お知らせ</div> 
-            <div class="text-blue-400 font-bold">INFORMATION</div> 
+            <div class="mb-1">お知らせ</div>
+            <div class="text-blue-400 font-bold">INFORMATION</div>
           </a>
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 py-2 md:p-3">
+        <li
+          class="
+            w-full
+            md:w-auto
+            border-b
+            md:border-r md:border-t-0 md:border-b-0
+            py-2
+            md:p-3
+          "
+        >
           <a
             href="/member/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
-
           >
-            <div class="mb-1">メンバー</div> 
-            <div class="text-blue-400 font-bold">MEMBER</div> 
+            <div class="mb-1">メンバー</div>
+            <div class="text-blue-400 font-bold">MEMBER</div>
           </a>
         </li>
 
-        <li class="w-full md:w-auto border-b md:border-r md:border-t-0 md:border-b-0 py-2 md:p-3">
+        <li
+          class="
+            w-full
+            md:w-auto
+            border-b
+            md:border-r md:border-t-0 md:border-b-0
+            py-2
+            md:p-3
+          "
+        >
           <a
             href="/blog/"
             class="md:block inline-block py-0 md:py-2 md:px-5 md:px-0 w-full"
           >
-            <div class="mb-1">ブログ</div> 
-            <div class="text-blue-400 font-bold">BLOG</div> 
+            <div class="mb-1">ブログ</div>
+            <div class="text-blue-400 font-bold">BLOG</div>
           </a>
         </li>
       </ul>
     </nav>
-    
   </header>
 </template>
 
@@ -100,8 +147,8 @@ export default {
   name: 'LayoutHeader',
   data() {
     return {
-      isOpen: false
+      isOpen: false,
     }
-  }
+  },
 }
 </script>

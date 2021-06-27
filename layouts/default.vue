@@ -1,12 +1,10 @@
 <template>
   <div>
-
     <layout-header />
 
     <Nuxt />
 
     <layout-footer />
-
   </div>
 </template>
 
@@ -26,6 +24,6 @@ main {
   main {
     min-height: 50vh;
     padding-bottom: 8vh;
-  } 
+  }
 }
 </style>

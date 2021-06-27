@@ -8,26 +8,30 @@
 
     <!-- main -->
     <main class="w-full md:max-w-4xl mx-auto px-6 md:px-0">
-
       <div
-        class="mb-10 md:mb-20 w-11/12 md:w-10/12 mx-auto transition-10 border-b-2 border-blue-200"
+        v-for="(item, index) in items"
         :id="item.id"
-        v-for="(item, index) in items" :key="index"
+        :key="index"
+        class="
+          mb-10
+          md:mb-20
+          w-11/12
+          md:w-10/12
+          mx-auto
+          transition-10
+          border-b-2 border-blue-200
+        "
       >
         <div class="border-l-8 border-blue-400 pl-4 -ml-4 py-1 mb-4">
-          <time class="text-xl md:text-2xl block md:w-1/6">
+          <time class="text-xl md:text-xl block md:w-1/6">
             {{ item.date | formatDate }}
           </time>
-          <div class="md:w-10/12 text-3xl md:text-4xl">
+          <div class="md:w-10/12 text-2xl md:text-4xl">
             {{ item.title }}
           </div>
         </div>
 
-        <div
-          v-html="item.body"
-          class="body-text mb-10 text-2xl md:text-3xl"
-        />
-
+        <div class="body-text mb-10 text-lg md:text-3xl" v-html="item.body" />
       </div>
 
       <div class="mx-auto text-center mb-8 md:mb-12">
@@ -39,11 +43,7 @@
         </a>
       </div>
 
-      <base-button
-        name="HOME"
-        link="/"
-      />
-
+      <base-button name="HOME" link="/" />
     </main>
   </all-wrapper>
 </template>
@@ -53,9 +53,12 @@ import axios from 'axios'
 
 export default {
   async asyncData({ $config }) {
-    const { data } = await axios.get(`${$config.apiUrl}/information?filters=isRecent[equals]true`, {
-      headers: { 'X-API-KEY': $config.apiKey }
-    })
+    const { data } = await axios.get(
+      `${$config.apiUrl}/information?filters=isRecent[equals]true`,
+      {
+        headers: { 'X-API-KEY': $config.apiKey },
+      }
+    )
     return {
       items: data.contents,
     }
