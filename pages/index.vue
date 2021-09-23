@@ -1,7 +1,24 @@
 <template>
-  <header class="bg-yellow-200 h-96 md:h-48">
-    <h2 class="text-3xl">歯医者です。</h2>
-  </header>
+  <div>
+    <header class="bg-yellow-200 mt-20 h-96">
+      <h2 class="text-3xl">Title</h2>
+    </header>
+
+    <section class="mt-56">
+      <Title
+        title="Message"
+        message="当院の院長からのメッセージです。"
+      />
+    </section>
+
+    <section>
+      <Title
+        title="Message"
+        message="こんいちは"
+      />
+    </section>
+
+  </div>
 </template>
 
 <script lang="ts">
@@ -27,5 +44,17 @@ export default Vue.extend({})
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+}
+
+section {
+  width: 80%;
+  margin: 50px auto;
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    width: 90%;
+  }
 }
 </style>
