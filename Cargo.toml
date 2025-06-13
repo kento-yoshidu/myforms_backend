@@ -4,3 +4,6 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+actix-web = "4"
+lambda-web = { version = "0.2", features = ["actix4"] }
+tokio = { version = "1", features = ["full"] }
