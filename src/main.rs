@@ -1,6 +1,6 @@
 mod form;
 
-use actix_web::{http, get, App, HttpResponse, HttpServer, Responder};
+use actix_web::{get, App, HttpResponse, HttpServer, Responder};
 use actix_cors::Cors;
 use lambda_web::{is_running_on_lambda, run_actix_on_lambda};
 use std::error::Error;
@@ -16,12 +16,12 @@ async fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
     let app = ||
         App::new()
         .wrap(
-            Cors::default()
-                .allowed_origin("http://localhost:3000")
-                .allowed_methods(vec!["POST", "GET"])
-                .allowed_headers(vec![http::header::CONTENT_TYPE])
-                .max_age(3600),
-        )
+                Cors::default()
+                    .allow_any_origin()
+                    .allow_any_method()
+                    .allow_any_header()
+                    .max_age(3600),
+            )
         .service(form1);
 
     if is_running_on_lambda() {
