@@ -28,7 +28,7 @@ async fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
         run_actix_on_lambda(app).await
     } else {
         HttpServer::new(app)
-            .bind(("127.0.0.1", 8080))?
+            .bind(("0.0.0.0", 8000))?
             .run()
             .await
             .map_err(|e| e.into())
