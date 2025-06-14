@@ -1,6 +1,10 @@
-use actix_web::{get, App, HttpResponse, HttpServer, Responder};
+mod form;
+
+use actix_web::{http, get, App, HttpResponse, HttpServer, Responder};
+use actix_cors::Cors;
 use lambda_web::{is_running_on_lambda, run_actix_on_lambda};
 use std::error::Error;
+use form::{form1::form1};
 
 #[get("/")]
 async fn hello() -> impl Responder {
@@ -9,7 +13,16 @@ async fn hello() -> impl Responder {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
-    let app = || App::new().service(hello);
+    let app = ||
+        App::new()
+        .wrap(
+            Cors::default()
+                .allowed_origin("http://localhost:3000")
+                .allowed_methods(vec!["POST", "GET"])
+                .allowed_headers(vec![http::header::CONTENT_TYPE])
+                .max_age(3600),
+        )
+        .service(form1);
 
     if is_running_on_lambda() {
         run_actix_on_lambda(app).await
@@ -18,6 +31,6 @@ async fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
             .bind(("127.0.0.1", 8080))?
             .run()
             .await
-            .map_err(|e| e.into())  // ← ここで型変換
+            .map_err(|e| e.into())
     }
 }
