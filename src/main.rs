@@ -4,7 +4,7 @@ use actix_web::{get, App, HttpResponse, HttpServer, Responder};
 use actix_cors::Cors;
 use lambda_web::{is_running_on_lambda, run_actix_on_lambda};
 use std::error::Error;
-use form::{form1::form1};
+use form::{form1::form1, form2::form2};
 
 #[get("/")]
 async fn hello() -> impl Responder {
@@ -22,7 +22,8 @@ async fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
                     .allow_any_header()
                     .max_age(3600),
             )
-        .service(form1);
+        .service(form1)
+        .service(form2);
 
     if is_running_on_lambda() {
         run_actix_on_lambda(app).await
